@@ -5,9 +5,9 @@ public:
         int cnt = 0;
         int n = nums.size();
         for(int i=0;i<n;i++){
-            if(cnt == 0){
+             if(cnt==0){
                 cnt++;
-                ele = nums[i];
+                ele=nums[i];
             }
             else if(nums[i]==ele){
                 cnt++;
@@ -15,11 +15,14 @@ public:
             else{
                 cnt--;
             }
+           
         }
         for(int i=0;i<n;i++){
             if(ele==nums[i]){
                 cnt++;
-                if(cnt>(n/2)) return nums[i];
+            }
+            if(cnt>(n/2)){
+                return nums[i];
             }
         }
         return -1;
