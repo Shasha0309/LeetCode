@@ -10,6 +10,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0053-maximum-subarray](https://github.com/Shasha0309/LeetCode/tree/master/0053-maximum-subarray) |
 | [0075-sort-colors](https://github.com/Shasha0309/LeetCode/tree/master/0075-sort-colors) |
 | [0136-single-number](https://github.com/Shasha0309/LeetCode/tree/master/0136-single-number) |
+| [0169-majority-element](https://github.com/Shasha0309/LeetCode/tree/master/0169-majority-element) |
 | [0189-rotate-array](https://github.com/Shasha0309/LeetCode/tree/master/0189-rotate-array) |
 | [0268-missing-number](https://github.com/Shasha0309/LeetCode/tree/master/0268-missing-number) |
 | [0283-move-zeroes](https://github.com/Shasha0309/LeetCode/tree/master/0283-move-zeroes) |
@@ -33,6 +34,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/Shasha0309/LeetCode/tree/master/0001-two-sum) |
+| [0169-majority-element](https://github.com/Shasha0309/LeetCode/tree/master/0169-majority-element) |
 | [0268-missing-number](https://github.com/Shasha0309/LeetCode/tree/master/0268-missing-number) |
 # Binary Search
 |  |
@@ -47,11 +49,13 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0075-sort-colors](https://github.com/Shasha0309/LeetCode/tree/master/0075-sort-colors) |
+| [0169-majority-element](https://github.com/Shasha0309/LeetCode/tree/master/0169-majority-element) |
 | [0268-missing-number](https://github.com/Shasha0309/LeetCode/tree/master/0268-missing-number) |
 # Divide and Conquer
 |  |
 | ------- |
 | [0053-maximum-subarray](https://github.com/Shasha0309/LeetCode/tree/master/0053-maximum-subarray) |
+| [0169-majority-element](https://github.com/Shasha0309/LeetCode/tree/master/0169-majority-element) |
 # Dynamic Programming
 |  |
 | ------- |
@@ -60,3 +64,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [2271-rearrange-array-elements-by-sign](https://github.com/Shasha0309/LeetCode/tree/master/2271-rearrange-array-elements-by-sign) |
+# Counting
+|  |
+| ------- |
+| [0169-majority-element](https://github.com/Shasha0309/LeetCode/tree/master/0169-majority-element) |
