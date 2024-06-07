@@ -3,46 +3,38 @@ public:
     vector<int> spiralOrder(vector<vector<int>>& matrix) {
         int m = matrix.size();
         int n = matrix[0].size();
-        int rmin = 0;
-        int rmax = matrix.size()-1;
-        int cmin = 0;
-        int cmax = matrix[0].size()-1;
+        
+        int top_row = 0;
+        int right_col = n-1;
+        int bottom_row = m-1;
+        int left_col = 0;
         int count = 0;
         vector<int> ans;
         while(count<m*n){
-            //top
-            for(int i=cmin;i<=cmax && count<m*n;i++){
-                 ans.push_back(matrix[rmin][i]);
-                count++;
-            }
-            rmin++;
-
-            //extreme right
-            for(int i=rmin;i<=rmax && count<m*n;i++){
-                ans.push_back(matrix[i][cmax]);
-                count++;
-            }  
-            cmax--;
-
-            //extreme bottom
-             
-            for(int i=cmax;i>=cmin && count<m*n;i--){
-                ans.push_back(matrix[rmax][i]);
-                count++;
-            }
-        
-            rmax--;
-
-            //extreme left
-            
-            for(int i=rmax;i>=rmin && count<m*n;i--){
-                ans.push_back(matrix[i][cmin]);
-                count++;
-            }
-            
-            cmin++;
+            for(int i=left_col;i<=right_col && count<m*n;i++){
+            ans.push_back(matrix[top_row][i]);
+            count++;
         }
-    
-    return ans;
-}
+        top_row++;
+        
+        for(int i=top_row;i<=bottom_row && count<m*n;i++){
+            ans.push_back(matrix[i][right_col]);
+            count++;
+        }
+        right_col--;
+
+         for(int i=right_col;i>=left_col && count<m*n;i--){
+            ans.push_back(matrix[bottom_row][i]);
+            count++;
+        }
+        bottom_row--;
+
+         for(int i=bottom_row;i>=top_row && count<m*n;i--){
+            ans.push_back(matrix[i][left_col]);
+            count++;
+        }
+        left_col++;
+        }
+        return ans;
+    }
 };
