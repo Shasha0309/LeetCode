@@ -15,5 +15,5 @@ public:
             mp.insert({nums[i],i});
         }
          return ans;
-            }
+    }
 };
