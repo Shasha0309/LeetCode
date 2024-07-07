@@ -188,6 +188,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/Shasha0309/LeetCode/tree/master/0003-longest-substring-without-repeating-characters) |
+| [0076-minimum-window-substring](https://github.com/Shasha0309/LeetCode/tree/master/0076-minimum-window-substring) |
 | [0424-longest-repeating-character-replacement](https://github.com/Shasha0309/LeetCode/tree/master/0424-longest-repeating-character-replacement) |
 | [0496-next-greater-element-i](https://github.com/Shasha0309/LeetCode/tree/master/0496-next-greater-element-i) |
 | [0966-binary-subarrays-with-sum](https://github.com/Shasha0309/LeetCode/tree/master/0966-binary-subarrays-with-sum) |
@@ -208,12 +209,14 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/Shasha0309/LeetCode/tree/master/0003-longest-substring-without-repeating-characters) |
+| [0076-minimum-window-substring](https://github.com/Shasha0309/LeetCode/tree/master/0076-minimum-window-substring) |
 | [0424-longest-repeating-character-replacement](https://github.com/Shasha0309/LeetCode/tree/master/0424-longest-repeating-character-replacement) |
 | [1460-number-of-substrings-containing-all-three-characters](https://github.com/Shasha0309/LeetCode/tree/master/1460-number-of-substrings-containing-all-three-characters) |
 ## Sliding Window
 |  |
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/Shasha0309/LeetCode/tree/master/0003-longest-substring-without-repeating-characters) |
+| [0076-minimum-window-substring](https://github.com/Shasha0309/LeetCode/tree/master/0076-minimum-window-substring) |
 | [0424-longest-repeating-character-replacement](https://github.com/Shasha0309/LeetCode/tree/master/0424-longest-repeating-character-replacement) |
 | [0966-binary-subarrays-with-sum](https://github.com/Shasha0309/LeetCode/tree/master/0966-binary-subarrays-with-sum) |
 | [1034-subarrays-with-k-different-integers](https://github.com/Shasha0309/LeetCode/tree/master/1034-subarrays-with-k-different-integers) |
