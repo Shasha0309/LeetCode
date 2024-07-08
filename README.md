@@ -177,6 +177,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Array
 |  |
 | ------- |
+| [0455-assign-cookies](https://github.com/Shasha0309/LeetCode/tree/master/0455-assign-cookies) |
 | [0496-next-greater-element-i](https://github.com/Shasha0309/LeetCode/tree/master/0496-next-greater-element-i) |
 | [0503-next-greater-element-ii](https://github.com/Shasha0309/LeetCode/tree/master/0503-next-greater-element-ii) |
 | [0966-binary-subarrays-with-sum](https://github.com/Shasha0309/LeetCode/tree/master/0966-binary-subarrays-with-sum) |
@@ -242,4 +243,16 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [1034-subarrays-with-k-different-integers](https://github.com/Shasha0309/LeetCode/tree/master/1034-subarrays-with-k-different-integers) |
+## Two Pointers
+|  |
+| ------- |
+| [0455-assign-cookies](https://github.com/Shasha0309/LeetCode/tree/master/0455-assign-cookies) |
+## Greedy
+|  |
+| ------- |
+| [0455-assign-cookies](https://github.com/Shasha0309/LeetCode/tree/master/0455-assign-cookies) |
+## Sorting
+|  |
+| ------- |
+| [0455-assign-cookies](https://github.com/Shasha0309/LeetCode/tree/master/0455-assign-cookies) |
 <!---LeetCode Topics End-->
