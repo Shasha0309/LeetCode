@@ -42,7 +42,7 @@ public:
             if(root->val>key){
                 if(root->left!=NULL && root->left->val==key){
                     root->left = solver(root->left);
-                    break;
+                    //break;
                 }
                 else{
                     root=root->left;
@@ -51,7 +51,7 @@ public:
             else{
                 if(root->right!=NULL && root->right->val==key){
                     root->right = solver(root->right);
-                    break;
+                    //break;
                 }
                 else{
                     root=root->right;
