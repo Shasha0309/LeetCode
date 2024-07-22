@@ -256,6 +256,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Math
 |  |
 | ------- |
+| [1013-fibonacci-number](https://github.com/Shasha0309/LeetCode/tree/master/1013-fibonacci-number) |
 | [1370-count-number-of-nice-subarrays](https://github.com/Shasha0309/LeetCode/tree/master/1370-count-number-of-nice-subarrays) |
 ## Counting
 |  |
@@ -288,6 +289,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0055-jump-game](https://github.com/Shasha0309/LeetCode/tree/master/0055-jump-game) |
 | [0124-binary-tree-maximum-path-sum](https://github.com/Shasha0309/LeetCode/tree/master/0124-binary-tree-maximum-path-sum) |
 | [0435-non-overlapping-intervals](https://github.com/Shasha0309/LeetCode/tree/master/0435-non-overlapping-intervals) |
+| [1013-fibonacci-number](https://github.com/Shasha0309/LeetCode/tree/master/1013-fibonacci-number) |
 ## Tree
 |  |
 | ------- |
@@ -397,4 +399,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0090-subsets-ii](https://github.com/Shasha0309/LeetCode/tree/master/0090-subsets-ii) |
+## Recursion
+|  |
+| ------- |
+| [1013-fibonacci-number](https://github.com/Shasha0309/LeetCode/tree/master/1013-fibonacci-number) |
+## Memoization
+|  |
+| ------- |
+| [1013-fibonacci-number](https://github.com/Shasha0309/LeetCode/tree/master/1013-fibonacci-number) |
 <!---LeetCode Topics End-->
