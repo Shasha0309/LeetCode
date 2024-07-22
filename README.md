@@ -177,6 +177,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Array
 |  |
 | ------- |
+| [0039-combination-sum](https://github.com/Shasha0309/LeetCode/tree/master/0039-combination-sum) |
 | [0045-jump-game-ii](https://github.com/Shasha0309/LeetCode/tree/master/0045-jump-game-ii) |
 | [0055-jump-game](https://github.com/Shasha0309/LeetCode/tree/master/0055-jump-game) |
 | [0056-merge-intervals](https://github.com/Shasha0309/LeetCode/tree/master/0056-merge-intervals) |
@@ -384,4 +385,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0173-binary-search-tree-iterator](https://github.com/Shasha0309/LeetCode/tree/master/0173-binary-search-tree-iterator) |
+## Backtracking
+|  |
+| ------- |
+| [0039-combination-sum](https://github.com/Shasha0309/LeetCode/tree/master/0039-combination-sum) |
 <!---LeetCode Topics End-->
