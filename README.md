@@ -183,6 +183,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0055-jump-game](https://github.com/Shasha0309/LeetCode/tree/master/0055-jump-game) |
 | [0056-merge-intervals](https://github.com/Shasha0309/LeetCode/tree/master/0056-merge-intervals) |
 | [0057-insert-interval](https://github.com/Shasha0309/LeetCode/tree/master/0057-insert-interval) |
+| [0090-subsets-ii](https://github.com/Shasha0309/LeetCode/tree/master/0090-subsets-ii) |
 | [0435-non-overlapping-intervals](https://github.com/Shasha0309/LeetCode/tree/master/0435-non-overlapping-intervals) |
 | [0455-assign-cookies](https://github.com/Shasha0309/LeetCode/tree/master/0455-assign-cookies) |
 | [0496-next-greater-element-i](https://github.com/Shasha0309/LeetCode/tree/master/0496-next-greater-element-i) |
@@ -391,4 +392,9 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0039-combination-sum](https://github.com/Shasha0309/LeetCode/tree/master/0039-combination-sum) |
 | [0040-combination-sum-ii](https://github.com/Shasha0309/LeetCode/tree/master/0040-combination-sum-ii) |
+| [0090-subsets-ii](https://github.com/Shasha0309/LeetCode/tree/master/0090-subsets-ii) |
+## Bit Manipulation
+|  |
+| ------- |
+| [0090-subsets-ii](https://github.com/Shasha0309/LeetCode/tree/master/0090-subsets-ii) |
 <!---LeetCode Topics End-->
