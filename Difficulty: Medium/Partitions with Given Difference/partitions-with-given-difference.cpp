@@ -5,23 +5,21 @@ using namespace std;
 // } Driver Code Ends
 class Solution {
      int mod = (int)(1e9+7);
-    int solve(vector<int>& arr,int n, int sum,vector<vector<int>>& dp){
-        if(n==0){
-            if(sum==0 && arr[0]==0)return 2;
-            if(sum==0 || arr[0]==sum)return 1;
-            return 0;
-        }
-        
-        if(dp[n][sum] != -1) return dp[n][sum];
-        int nottake = solve(arr,n-1,sum,dp);
-        int take = 0;
-        if(arr[n]<=sum) take = solve(arr,n-1,sum-arr[n],dp);
-        
-        return dp[n][sum] = (nottake + take) % mod;
-    }
     int sol(vector<int>& arr,int target,int n){
-        vector<vector<int>> dp(n, vector<int>(target+1,-1));
-        return solve(arr,n-1,target,dp);
+        vector<vector<int>> dp(n, vector<int>(target+1,0));
+        if(arr[0]==0) dp[0][0] = 2;
+        else dp[0][0]=1;
+        if(arr[0]!=0 && arr[0]<=target) dp[0][arr[0]]=1;
+        
+        for(int i=1;i<n;i++){
+            for(int j=0;j<=target;j++){
+                int nottake = dp[i-1][j];
+                int take = 0;
+                if(arr[i]<=j) take = dp[i-1][j-arr[i]];
+                dp[i][j] = (nottake + take) % mod;
+            }
+        }
+        return dp[n-1][target];
     }
 public:
     int countPartitions(int n, int d, vector<int>& arr) {
