@@ -393,6 +393,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0230-kth-smallest-element-in-a-bst](https://github.com/Shasha0309/LeetCode/tree/master/0230-kth-smallest-element-in-a-bst) |
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/Shasha0309/LeetCode/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 | [0543-diameter-of-binary-tree](https://github.com/Shasha0309/LeetCode/tree/master/0543-diameter-of-binary-tree) |
+| [0547-number-of-provinces](https://github.com/Shasha0309/LeetCode/tree/master/0547-number-of-provinces) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/Shasha0309/LeetCode/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/Shasha0309/LeetCode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 ## Binary Tree
@@ -430,6 +431,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0104-maximum-depth-of-binary-tree](https://github.com/Shasha0309/LeetCode/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0199-binary-tree-right-side-view](https://github.com/Shasha0309/LeetCode/tree/master/0199-binary-tree-right-side-view) |
 | [0322-coin-change](https://github.com/Shasha0309/LeetCode/tree/master/0322-coin-change) |
+| [0547-number-of-provinces](https://github.com/Shasha0309/LeetCode/tree/master/0547-number-of-provinces) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/Shasha0309/LeetCode/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/Shasha0309/LeetCode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 ## Binary Search Tree
@@ -491,4 +493,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0673-number-of-longest-increasing-subsequence](https://github.com/Shasha0309/LeetCode/tree/master/0673-number-of-longest-increasing-subsequence) |
+## Union Find
+|  |
+| ------- |
+| [0547-number-of-provinces](https://github.com/Shasha0309/LeetCode/tree/master/0547-number-of-provinces) |
+## Graph
+|  |
+| ------- |
+| [0547-number-of-provinces](https://github.com/Shasha0309/LeetCode/tree/master/0547-number-of-provinces) |
 <!---LeetCode Topics End-->
