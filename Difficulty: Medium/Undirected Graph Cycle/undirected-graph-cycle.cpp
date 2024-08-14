@@ -5,34 +5,27 @@ using namespace std;
 // } Driver Code Ends
 class Solution {
     private:
-    bool solve(int src,int vis[],vector<int> adj[]){
+    bool solve(int src,int node,int vis[],vector<int> adj[]){
         vis[src] = 1;
-        queue<pair<int,int>> q;
-        q.push({src,-1});
-        while(!q.empty()){
-            int node = q.front().first;
-            int parent = q.front().second;
-            q.pop();
-            for(auto it : adj[node]){
+            for(auto it : adj[src]){
                 if(!vis[it]){
-                    vis[it] = 1;
-                    q.push({it,node});
+                    if(solve(it,src,vis,adj)==true) return true;
                 }
-                else if(it!=parent){
+                else if(it!=node){
                     return true;
                 }
             }
-        }
+        
         return false;
     }
   public:
     // Function to detect cycle in an undirected graph.
     bool isCycle(int V, vector<int> adj[]) {
         // Code here
-        int vis[V] = {0};
+         int vis[V] = {0};
         for(int i=0;i<V;i++){
             if(!vis[i]){
-                if(solve(i,vis,adj)) return true;
+                if(solve(i,-1,vis,adj)==true) return true;
             }
         }
         return false;
