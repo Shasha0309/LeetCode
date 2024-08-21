@@ -14,13 +14,8 @@ class Solution {
   public:
     int largest(vector<int> &arr) {
         // code here
-        int sum =0;
-        int i=0;
-        while(i<arr.size()){
-            sum = max(sum,arr[i]);
-            i++;
-        }
-        return sum;
+        sort(arr.begin(),arr.end());
+        return arr[arr.size()-1];
     }
 };
 
