@@ -191,6 +191,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0123-best-time-to-buy-and-sell-stock-iii](https://github.com/Shasha0309/LeetCode/tree/master/0123-best-time-to-buy-and-sell-stock-iii) |
 | [0130-surrounded-regions](https://github.com/Shasha0309/LeetCode/tree/master/0130-surrounded-regions) |
 | [0188-best-time-to-buy-and-sell-stock-iv](https://github.com/Shasha0309/LeetCode/tree/master/0188-best-time-to-buy-and-sell-stock-iv) |
+| [0189-rotate-array](https://github.com/Shasha0309/LeetCode/tree/master/0189-rotate-array) |
 | [0198-house-robber](https://github.com/Shasha0309/LeetCode/tree/master/0198-house-robber) |
 | [0213-house-robber-ii](https://github.com/Shasha0309/LeetCode/tree/master/0213-house-robber-ii) |
 | [0300-longest-increasing-subsequence](https://github.com/Shasha0309/LeetCode/tree/master/0300-longest-increasing-subsequence) |
@@ -295,6 +296,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0009-palindrome-number](https://github.com/Shasha0309/LeetCode/tree/master/0009-palindrome-number) |
 | [0062-unique-paths](https://github.com/Shasha0309/LeetCode/tree/master/0062-unique-paths) |
 | [0070-climbing-stairs](https://github.com/Shasha0309/LeetCode/tree/master/0070-climbing-stairs) |
+| [0189-rotate-array](https://github.com/Shasha0309/LeetCode/tree/master/0189-rotate-array) |
 | [0368-largest-divisible-subset](https://github.com/Shasha0309/LeetCode/tree/master/0368-largest-divisible-subset) |
 | [1013-fibonacci-number](https://github.com/Shasha0309/LeetCode/tree/master/1013-fibonacci-number) |
 | [1370-count-number-of-nice-subarrays](https://github.com/Shasha0309/LeetCode/tree/master/1370-count-number-of-nice-subarrays) |
@@ -305,6 +307,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Two Pointers
 |  |
 | ------- |
+| [0189-rotate-array](https://github.com/Shasha0309/LeetCode/tree/master/0189-rotate-array) |
 | [0455-assign-cookies](https://github.com/Shasha0309/LeetCode/tree/master/0455-assign-cookies) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/Shasha0309/LeetCode/tree/master/0653-two-sum-iv-input-is-a-bst) |
 ## Greedy
