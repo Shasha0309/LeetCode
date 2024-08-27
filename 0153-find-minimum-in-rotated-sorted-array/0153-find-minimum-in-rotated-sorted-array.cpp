@@ -7,7 +7,6 @@ public:
         int mid;
         int ans = nums[0];
         int res;
-        if(nums[n-1]>nums[0]) return nums[0];
         while(low<=high){
             mid = low+(high-low)/2;
             if(nums[mid]>nums[high]){
