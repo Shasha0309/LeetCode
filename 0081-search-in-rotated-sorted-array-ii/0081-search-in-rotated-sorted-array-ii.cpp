@@ -6,16 +6,15 @@ public:
         int high = n-1;
         int mid;
         while(low<=high){
-            mid=low+(high-low)/2;
-            if(nums[mid]==target){
-                return true;
-            }
-            else if(nums[mid]==nums[low] && nums[mid]==nums[high]){
+            mid = low+(high-low)/2;
+            if(nums[mid]==target) return true;
+            if(nums[low]==nums[mid] && nums[mid]==nums[high]){
                 low++;
                 high--;
+                continue;
             }
-            else if(nums[low]<=nums[mid]){
-                if(target>=nums[low] && target<nums[mid]){
+            else if(nums[mid]>=nums[low]){
+                if(target>=nums[low] && target<=nums[mid]){
                     high = mid-1;
                 }
                 else{
@@ -23,11 +22,11 @@ public:
                 }
             }
             else{
-                if(target<=nums[high] && target>nums[mid]){
-                    low=mid+1;
+                if(target>=nums[mid] && target<=nums[high]){
+                    low = mid+1;
                 }
                 else{
-                    high=mid-1;
+                    high = mid-1;
                 }
             }
         }
