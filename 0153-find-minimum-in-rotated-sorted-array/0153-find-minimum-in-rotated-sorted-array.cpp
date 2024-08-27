@@ -5,19 +5,20 @@ public:
         int low = 0;
         int high = n-1;
         int mid;
-        int ans=nums[0];
+        int ans = nums[0];
         int res;
+        if(nums[n-1]>nums[0]) return nums[0];
         while(low<=high){
             mid = low+(high-low)/2;
             if(nums[mid]>nums[high]){
-                low=mid+1;
                 res = nums[mid];
-                ans = min(res,ans);
+                low = mid+1;
+                ans = min(ans,res);
             }
             else{
                 high = mid-1;
-                res = nums[mid];
-                ans = min(res,ans);
+                res=nums[mid];
+                ans = min(ans,res);
             }
         }
         return ans;
