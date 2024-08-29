@@ -5,16 +5,16 @@ public:
         int low = 0;
         int high = n-1;
         int mid;
-        int missing;
         while(low<=high){
-            mid=low+(high-low)/2;
-            missing=arr[mid]-(mid+1);
-            if(missing<k) low=mid+1;
-            else high=mid-1;
+            mid = low+(high-low)/2;
+            int missy = arr[mid]-(mid+1);
+            if(missy<k){
+                low=mid+1;
+            }
+            else{
+                high=mid-1;
+            }
         }
-        //int tre = arr[high]-(high+1);
-        //int res = k-tre;
-        //int ans = arr[high]+res;
-        return low+k;
+        return high+k+1;
     }
 };
