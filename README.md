@@ -255,6 +255,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0076-minimum-window-substring](https://github.com/Shasha0309/LeetCode/tree/master/0076-minimum-window-substring) |
 | [0127-word-ladder](https://github.com/Shasha0309/LeetCode/tree/master/0127-word-ladder) |
 | [0141-linked-list-cycle](https://github.com/Shasha0309/LeetCode/tree/master/0141-linked-list-cycle) |
+| [0142-linked-list-cycle-ii](https://github.com/Shasha0309/LeetCode/tree/master/0142-linked-list-cycle-ii) |
 | [0169-majority-element](https://github.com/Shasha0309/LeetCode/tree/master/0169-majority-element) |
 | [0229-majority-element-ii](https://github.com/Shasha0309/LeetCode/tree/master/0229-majority-element-ii) |
 | [0268-missing-number](https://github.com/Shasha0309/LeetCode/tree/master/0268-missing-number) |
@@ -360,6 +361,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0031-next-permutation](https://github.com/Shasha0309/LeetCode/tree/master/0031-next-permutation) |
 | [0075-sort-colors](https://github.com/Shasha0309/LeetCode/tree/master/0075-sort-colors) |
 | [0141-linked-list-cycle](https://github.com/Shasha0309/LeetCode/tree/master/0141-linked-list-cycle) |
+| [0142-linked-list-cycle-ii](https://github.com/Shasha0309/LeetCode/tree/master/0142-linked-list-cycle-ii) |
 | [0189-rotate-array](https://github.com/Shasha0309/LeetCode/tree/master/0189-rotate-array) |
 | [0283-move-zeroes](https://github.com/Shasha0309/LeetCode/tree/master/0283-move-zeroes) |
 | [0455-assign-cookies](https://github.com/Shasha0309/LeetCode/tree/master/0455-assign-cookies) |
@@ -627,6 +629,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0141-linked-list-cycle](https://github.com/Shasha0309/LeetCode/tree/master/0141-linked-list-cycle) |
+| [0142-linked-list-cycle-ii](https://github.com/Shasha0309/LeetCode/tree/master/0142-linked-list-cycle-ii) |
 | [0206-reverse-linked-list](https://github.com/Shasha0309/LeetCode/tree/master/0206-reverse-linked-list) |
 | [0237-delete-node-in-a-linked-list](https://github.com/Shasha0309/LeetCode/tree/master/0237-delete-node-in-a-linked-list) |
 | [0908-middle-of-the-linked-list](https://github.com/Shasha0309/LeetCode/tree/master/0908-middle-of-the-linked-list) |
