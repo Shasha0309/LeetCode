@@ -10,18 +10,24 @@
  * };
  */
 class Solution {
-public:
-int solve(TreeNode* root){
-    if(root==NULL) return 0;
-    int res1 = solve(root->left);
-    if(res1==-1) return -1;
-    int res2 = solve(root->right);
-    if(res2==-1) return -1;
+    int getheight(TreeNode* root){
+        if(root==NULL){
+            return 0;
+        }
+        int lhei = getheight(root->left);
+        int rhei = getheight(root->right);
 
-    if(abs(res1-res2)>1) return -1;
-    return 1+max(res1,res2);
-}
+        return max(lhei,rhei)+1;
+    }
+public:
     bool isBalanced(TreeNode* root) {
-        return solve(root)!=-1;
+        if(root==NULL){
+            return true;
+        }
+        int LH = getheight(root->left);
+        int RH = getheight(root->right);
+
+        if(abs(LH-RH)<=1 && isBalanced(root->left) && isBalanced(root->right)) return true;
+        return false;
     }
 };
