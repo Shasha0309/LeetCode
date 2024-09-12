@@ -10,19 +10,19 @@
  * };
  */
 class Solution {
-public:
-int solve(TreeNode* root,int &ans){
-    if(root==NULL){
-        return 0;
+    int solve(TreeNode* root,int &diam){
+        if(root==NULL){
+            return 0;
+        }
+        int lh = max(0,solve(root->left,diam));
+        int rh = max(0,solve(root->right,diam));
+        diam = max(diam,root->val+lh+rh);
+        return max(lh,rh)+root->val;
     }
-    int lh = max(0,solve(root->left,ans));
-    int rh = max(0,solve(root->right,ans));
-    ans = max(ans,root->val+lh+rh);
-    return max(lh,rh)+root->val;
-}
+public:
     int maxPathSum(TreeNode* root) {
-        int answer=INT_MIN;
-        solve(root,answer);
-        return answer;
+        int sum = INT_MIN;
+        solve(root,sum);
+        return sum;
     }
 };
