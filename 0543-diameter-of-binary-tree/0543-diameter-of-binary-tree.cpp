@@ -10,14 +10,7 @@
  * };
  */
 class Solution {
-public:
-    int diameterOfBinaryTree(TreeNode* root) {
-        int dia = 0;
-        solve(root,dia);
-        return dia;
-    }
-    private:
-    int solve(TreeNode* root, int &diam){
+    int solve(TreeNode* root,int &diam){
         if(root==NULL){
             return 0;
         }
@@ -25,5 +18,11 @@ public:
         int rh = solve(root->right,diam);
         diam = max(diam,lh+rh);
         return 1+max(lh,rh);
+    }
+public:
+    int diameterOfBinaryTree(TreeNode* root) {
+     int dia = 0;
+     solve(root,dia);
+     return dia;  
     }
 };
