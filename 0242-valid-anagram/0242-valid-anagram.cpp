@@ -7,7 +7,7 @@ public:
             mpp[s[i]]++;
         }
         for(char c:t){
-            if(mpp.find(c)==mpp.end() || mpp[c]==0) return false;
+            if(mpp[c]==0) return false;
             mpp[c]--;
         }
         return true;
