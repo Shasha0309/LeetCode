@@ -262,6 +262,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0160-intersection-of-two-linked-lists](https://github.com/Shasha0309/LeetCode/tree/master/0160-intersection-of-two-linked-lists) |
 | [0169-majority-element](https://github.com/Shasha0309/LeetCode/tree/master/0169-majority-element) |
 | [0229-majority-element-ii](https://github.com/Shasha0309/LeetCode/tree/master/0229-majority-element-ii) |
+| [0242-valid-anagram](https://github.com/Shasha0309/LeetCode/tree/master/0242-valid-anagram) |
 | [0268-missing-number](https://github.com/Shasha0309/LeetCode/tree/master/0268-missing-number) |
 | [0389-find-the-difference](https://github.com/Shasha0309/LeetCode/tree/master/0389-find-the-difference) |
 | [0424-longest-repeating-character-replacement](https://github.com/Shasha0309/LeetCode/tree/master/0424-longest-repeating-character-replacement) |
@@ -307,6 +308,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0076-minimum-window-substring](https://github.com/Shasha0309/LeetCode/tree/master/0076-minimum-window-substring) |
 | [0115-distinct-subsequences](https://github.com/Shasha0309/LeetCode/tree/master/0115-distinct-subsequences) |
 | [0127-word-ladder](https://github.com/Shasha0309/LeetCode/tree/master/0127-word-ladder) |
+| [0242-valid-anagram](https://github.com/Shasha0309/LeetCode/tree/master/0242-valid-anagram) |
 | [0389-find-the-difference](https://github.com/Shasha0309/LeetCode/tree/master/0389-find-the-difference) |
 | [0402-remove-k-digits](https://github.com/Shasha0309/LeetCode/tree/master/0402-remove-k-digits) |
 | [0424-longest-repeating-character-replacement](https://github.com/Shasha0309/LeetCode/tree/master/0424-longest-repeating-character-replacement) |
@@ -417,6 +419,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0148-sort-list](https://github.com/Shasha0309/LeetCode/tree/master/0148-sort-list) |
 | [0169-majority-element](https://github.com/Shasha0309/LeetCode/tree/master/0169-majority-element) |
 | [0229-majority-element-ii](https://github.com/Shasha0309/LeetCode/tree/master/0229-majority-element-ii) |
+| [0242-valid-anagram](https://github.com/Shasha0309/LeetCode/tree/master/0242-valid-anagram) |
 | [0268-missing-number](https://github.com/Shasha0309/LeetCode/tree/master/0268-missing-number) |
 | [0368-largest-divisible-subset](https://github.com/Shasha0309/LeetCode/tree/master/0368-largest-divisible-subset) |
 | [0389-find-the-difference](https://github.com/Shasha0309/LeetCode/tree/master/0389-find-the-difference) |
