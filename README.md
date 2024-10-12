@@ -246,6 +246,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1050-construct-binary-search-tree-from-preorder-traversal](https://github.com/Shasha0309/LeetCode/tree/master/1050-construct-binary-search-tree-from-preorder-traversal) |
 | [1073-number-of-enclaves](https://github.com/Shasha0309/LeetCode/tree/master/1073-number-of-enclaves) |
 | [1370-count-number-of-nice-subarrays](https://github.com/Shasha0309/LeetCode/tree/master/1370-count-number-of-nice-subarrays) |
+| [1400-find-winner-on-a-tic-tac-toe-game](https://github.com/Shasha0309/LeetCode/tree/master/1400-find-winner-on-a-tic-tac-toe-game) |
 | [1408-find-the-smallest-divisor-given-a-threshold](https://github.com/Shasha0309/LeetCode/tree/master/1408-find-the-smallest-divisor-given-a-threshold) |
 | [1538-maximum-points-you-can-obtain-from-cards](https://github.com/Shasha0309/LeetCode/tree/master/1538-maximum-points-you-can-obtain-from-cards) |
 | [1605-minimum-number-of-days-to-make-m-bouquets](https://github.com/Shasha0309/LeetCode/tree/master/1605-minimum-number-of-days-to-make-m-bouquets) |
@@ -279,6 +280,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/Shasha0309/LeetCode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [1034-subarrays-with-k-different-integers](https://github.com/Shasha0309/LeetCode/tree/master/1034-subarrays-with-k-different-integers) |
 | [1370-count-number-of-nice-subarrays](https://github.com/Shasha0309/LeetCode/tree/master/1370-count-number-of-nice-subarrays) |
+| [1400-find-winner-on-a-tic-tac-toe-game](https://github.com/Shasha0309/LeetCode/tree/master/1400-find-winner-on-a-tic-tac-toe-game) |
 | [1460-number-of-substrings-containing-all-three-characters](https://github.com/Shasha0309/LeetCode/tree/master/1460-number-of-substrings-containing-all-three-characters) |
 ## Stack
 |  |
@@ -642,6 +644,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0967-minimum-falling-path-sum](https://github.com/Shasha0309/LeetCode/tree/master/0967-minimum-falling-path-sum) |
 | [1036-rotting-oranges](https://github.com/Shasha0309/LeetCode/tree/master/1036-rotting-oranges) |
 | [1073-number-of-enclaves](https://github.com/Shasha0309/LeetCode/tree/master/1073-number-of-enclaves) |
+| [1400-find-winner-on-a-tic-tac-toe-game](https://github.com/Shasha0309/LeetCode/tree/master/1400-find-winner-on-a-tic-tac-toe-game) |
 ## Binary Indexed Tree
 |  |
 | ------- |
@@ -681,6 +684,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0657-robot-return-to-origin](https://github.com/Shasha0309/LeetCode/tree/master/0657-robot-return-to-origin) |
 | [0682-baseball-game](https://github.com/Shasha0309/LeetCode/tree/master/0682-baseball-game) |
 | [0735-asteroid-collision](https://github.com/Shasha0309/LeetCode/tree/master/0735-asteroid-collision) |
+| [1400-find-winner-on-a-tic-tac-toe-game](https://github.com/Shasha0309/LeetCode/tree/master/1400-find-winner-on-a-tic-tac-toe-game) |
 | [2271-rearrange-array-elements-by-sign](https://github.com/Shasha0309/LeetCode/tree/master/2271-rearrange-array-elements-by-sign) |
 ## Linked List
 |  |
