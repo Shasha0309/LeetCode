@@ -324,6 +324,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0459-repeated-substring-pattern](https://github.com/Shasha0309/LeetCode/tree/master/0459-repeated-substring-pattern) |
 | [0516-longest-palindromic-subsequence](https://github.com/Shasha0309/LeetCode/tree/master/0516-longest-palindromic-subsequence) |
 | [0583-delete-operation-for-two-strings](https://github.com/Shasha0309/LeetCode/tree/master/0583-delete-operation-for-two-strings) |
+| [0657-robot-return-to-origin](https://github.com/Shasha0309/LeetCode/tree/master/0657-robot-return-to-origin) |
 | [0742-to-lower-case](https://github.com/Shasha0309/LeetCode/tree/master/0742-to-lower-case) |
 | [1170-shortest-common-supersequence](https://github.com/Shasha0309/LeetCode/tree/master/1170-shortest-common-supersequence) |
 | [1250-longest-common-subsequence](https://github.com/Shasha0309/LeetCode/tree/master/1250-longest-common-subsequence) |
@@ -677,6 +678,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Simulation
 |  |
 | ------- |
+| [0657-robot-return-to-origin](https://github.com/Shasha0309/LeetCode/tree/master/0657-robot-return-to-origin) |
 | [0682-baseball-game](https://github.com/Shasha0309/LeetCode/tree/master/0682-baseball-game) |
 | [0735-asteroid-collision](https://github.com/Shasha0309/LeetCode/tree/master/0735-asteroid-collision) |
 | [2271-rearrange-array-elements-by-sign](https://github.com/Shasha0309/LeetCode/tree/master/2271-rearrange-array-elements-by-sign) |
