@@ -388,6 +388,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0368-largest-divisible-subset](https://github.com/Shasha0309/LeetCode/tree/master/0368-largest-divisible-subset) |
 | [1013-fibonacci-number](https://github.com/Shasha0309/LeetCode/tree/master/1013-fibonacci-number) |
 | [1370-count-number-of-nice-subarrays](https://github.com/Shasha0309/LeetCode/tree/master/1370-count-number-of-nice-subarrays) |
+| [1630-count-odd-numbers-in-an-interval-range](https://github.com/Shasha0309/LeetCode/tree/master/1630-count-odd-numbers-in-an-interval-range) |
 | [1950-sign-of-the-product-of-an-array](https://github.com/Shasha0309/LeetCode/tree/master/1950-sign-of-the-product-of-an-array) |
 ## Counting
 |  |
