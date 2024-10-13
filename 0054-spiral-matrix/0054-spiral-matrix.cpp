@@ -1,39 +1,36 @@
 class Solution {
 public:
     vector<int> spiralOrder(vector<vector<int>>& matrix) {
-        int m = matrix.size();
-        int n = matrix[0].size();
-        
-        int top_row = 0;
-        int right_col = n-1;
-        int bottom_row = m-1;
-        int left_col = 0;
-        int count = 0;
+        int n = matrix.size();
+        int m = matrix[0].size();
+        int top = 0;
+        int bottom = n-1;
+        int left = 0;
+        int right = m-1;
+        int total = n*m;
+        int cnt = 0;
         vector<int> ans;
-        while(count<m*n){
-            for(int i=left_col;i<=right_col && count<m*n;i++){
-            ans.push_back(matrix[top_row][i]);
-            count++;
-        }
-        top_row++;
-        
-        for(int i=top_row;i<=bottom_row && count<m*n;i++){
-            ans.push_back(matrix[i][right_col]);
-            count++;
-        }
-        right_col--;
-
-         for(int i=right_col;i>=left_col && count<m*n;i--){
-            ans.push_back(matrix[bottom_row][i]);
-            count++;
-        }
-        bottom_row--;
-
-         for(int i=bottom_row;i>=top_row && count<m*n;i--){
-            ans.push_back(matrix[i][left_col]);
-            count++;
-        }
-        left_col++;
+        while(cnt<total){
+            for(int i=left;cnt<total && i<=right;i++){
+               ans.push_back(matrix[top][i]);
+               cnt++;
+            }
+            top++;
+            for(int i=top;cnt<total && i<=bottom;i++){
+                ans.push_back(matrix[i][right]);
+                cnt++;
+            }
+            right--;
+            for(int i=right;cnt<total && i>=left;i--){
+                ans.push_back(matrix[bottom][i]);
+                cnt++;
+            }
+            bottom--;
+            for(int i=bottom;cnt<total && i>=top;i--){
+                ans.push_back(matrix[i][left]);
+                cnt++;
+            }
+            left++;
         }
         return ans;
     }
