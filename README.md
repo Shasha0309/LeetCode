@@ -252,6 +252,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1605-minimum-number-of-days-to-make-m-bouquets](https://github.com/Shasha0309/LeetCode/tree/master/1605-minimum-number-of-days-to-make-m-bouquets) |
 | [1626-can-make-arithmetic-progression-from-sequence](https://github.com/Shasha0309/LeetCode/tree/master/1626-can-make-arithmetic-progression-from-sequence) |
 | [1646-kth-missing-positive-number](https://github.com/Shasha0309/LeetCode/tree/master/1646-kth-missing-positive-number) |
+| [1677-matrix-diagonal-sum](https://github.com/Shasha0309/LeetCode/tree/master/1677-matrix-diagonal-sum) |
 | [1791-richest-customer-wealth](https://github.com/Shasha0309/LeetCode/tree/master/1791-richest-customer-wealth) |
 | [1878-check-if-array-is-sorted-and-rotated](https://github.com/Shasha0309/LeetCode/tree/master/1878-check-if-array-is-sorted-and-rotated) |
 | [1950-sign-of-the-product-of-an-array](https://github.com/Shasha0309/LeetCode/tree/master/1950-sign-of-the-product-of-an-array) |
@@ -646,6 +647,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1036-rotting-oranges](https://github.com/Shasha0309/LeetCode/tree/master/1036-rotting-oranges) |
 | [1073-number-of-enclaves](https://github.com/Shasha0309/LeetCode/tree/master/1073-number-of-enclaves) |
 | [1400-find-winner-on-a-tic-tac-toe-game](https://github.com/Shasha0309/LeetCode/tree/master/1400-find-winner-on-a-tic-tac-toe-game) |
+| [1677-matrix-diagonal-sum](https://github.com/Shasha0309/LeetCode/tree/master/1677-matrix-diagonal-sum) |
 | [1791-richest-customer-wealth](https://github.com/Shasha0309/LeetCode/tree/master/1791-richest-customer-wealth) |
 ## Binary Indexed Tree
 |  |
