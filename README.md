@@ -190,6 +190,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0045-jump-game-ii](https://github.com/Shasha0309/LeetCode/tree/master/0045-jump-game-ii) |
 | [0048-rotate-image](https://github.com/Shasha0309/LeetCode/tree/master/0048-rotate-image) |
 | [0053-maximum-subarray](https://github.com/Shasha0309/LeetCode/tree/master/0053-maximum-subarray) |
+| [0054-spiral-matrix](https://github.com/Shasha0309/LeetCode/tree/master/0054-spiral-matrix) |
 | [0055-jump-game](https://github.com/Shasha0309/LeetCode/tree/master/0055-jump-game) |
 | [0056-merge-intervals](https://github.com/Shasha0309/LeetCode/tree/master/0056-merge-intervals) |
 | [0057-insert-interval](https://github.com/Shasha0309/LeetCode/tree/master/0057-insert-interval) |
@@ -637,6 +638,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0048-rotate-image](https://github.com/Shasha0309/LeetCode/tree/master/0048-rotate-image) |
+| [0054-spiral-matrix](https://github.com/Shasha0309/LeetCode/tree/master/0054-spiral-matrix) |
 | [0063-unique-paths-ii](https://github.com/Shasha0309/LeetCode/tree/master/0063-unique-paths-ii) |
 | [0064-minimum-path-sum](https://github.com/Shasha0309/LeetCode/tree/master/0064-minimum-path-sum) |
 | [0073-set-matrix-zeroes](https://github.com/Shasha0309/LeetCode/tree/master/0073-set-matrix-zeroes) |
@@ -685,6 +687,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Simulation
 |  |
 | ------- |
+| [0054-spiral-matrix](https://github.com/Shasha0309/LeetCode/tree/master/0054-spiral-matrix) |
 | [0657-robot-return-to-origin](https://github.com/Shasha0309/LeetCode/tree/master/0657-robot-return-to-origin) |
 | [0682-baseball-game](https://github.com/Shasha0309/LeetCode/tree/master/0682-baseball-game) |
 | [0735-asteroid-collision](https://github.com/Shasha0309/LeetCode/tree/master/0735-asteroid-collision) |
