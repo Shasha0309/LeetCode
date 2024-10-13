@@ -247,6 +247,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1046-max-consecutive-ones-iii](https://github.com/Shasha0309/LeetCode/tree/master/1046-max-consecutive-ones-iii) |
 | [1050-construct-binary-search-tree-from-preorder-traversal](https://github.com/Shasha0309/LeetCode/tree/master/1050-construct-binary-search-tree-from-preorder-traversal) |
 | [1073-number-of-enclaves](https://github.com/Shasha0309/LeetCode/tree/master/1073-number-of-enclaves) |
+| [1349-check-if-it-is-a-straight-line](https://github.com/Shasha0309/LeetCode/tree/master/1349-check-if-it-is-a-straight-line) |
 | [1370-count-number-of-nice-subarrays](https://github.com/Shasha0309/LeetCode/tree/master/1370-count-number-of-nice-subarrays) |
 | [1400-find-winner-on-a-tic-tac-toe-game](https://github.com/Shasha0309/LeetCode/tree/master/1400-find-winner-on-a-tic-tac-toe-game) |
 | [1408-find-the-smallest-divisor-given-a-threshold](https://github.com/Shasha0309/LeetCode/tree/master/1408-find-the-smallest-divisor-given-a-threshold) |
@@ -390,6 +391,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0368-largest-divisible-subset](https://github.com/Shasha0309/LeetCode/tree/master/0368-largest-divisible-subset) |
 | [1013-fibonacci-number](https://github.com/Shasha0309/LeetCode/tree/master/1013-fibonacci-number) |
 | [1018-largest-perimeter-triangle](https://github.com/Shasha0309/LeetCode/tree/master/1018-largest-perimeter-triangle) |
+| [1349-check-if-it-is-a-straight-line](https://github.com/Shasha0309/LeetCode/tree/master/1349-check-if-it-is-a-straight-line) |
 | [1370-count-number-of-nice-subarrays](https://github.com/Shasha0309/LeetCode/tree/master/1370-count-number-of-nice-subarrays) |
 | [1630-count-odd-numbers-in-an-interval-range](https://github.com/Shasha0309/LeetCode/tree/master/1630-count-odd-numbers-in-an-interval-range) |
 | [1950-sign-of-the-product-of-an-array](https://github.com/Shasha0309/LeetCode/tree/master/1950-sign-of-the-product-of-an-array) |
@@ -730,4 +732,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/Shasha0309/LeetCode/tree/master/0028-find-the-index-of-the-first-occurrence-in-a-string) |
 | [0459-repeated-substring-pattern](https://github.com/Shasha0309/LeetCode/tree/master/0459-repeated-substring-pattern) |
+## Geometry
+|  |
+| ------- |
+| [1349-check-if-it-is-a-straight-line](https://github.com/Shasha0309/LeetCode/tree/master/1349-check-if-it-is-a-straight-line) |
 <!---LeetCode Topics End-->
