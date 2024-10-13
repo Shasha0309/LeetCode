@@ -321,6 +321,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/Shasha0309/LeetCode/tree/master/0028-find-the-index-of-the-first-occurrence-in-a-string) |
 | [0044-wildcard-matching](https://github.com/Shasha0309/LeetCode/tree/master/0044-wildcard-matching) |
 | [0058-length-of-last-word](https://github.com/Shasha0309/LeetCode/tree/master/0058-length-of-last-word) |
+| [0067-add-binary](https://github.com/Shasha0309/LeetCode/tree/master/0067-add-binary) |
 | [0072-edit-distance](https://github.com/Shasha0309/LeetCode/tree/master/0072-edit-distance) |
 | [0076-minimum-window-substring](https://github.com/Shasha0309/LeetCode/tree/master/0076-minimum-window-substring) |
 | [0115-distinct-subsequences](https://github.com/Shasha0309/LeetCode/tree/master/0115-distinct-subsequences) |
@@ -385,6 +386,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0048-rotate-image](https://github.com/Shasha0309/LeetCode/tree/master/0048-rotate-image) |
 | [0062-unique-paths](https://github.com/Shasha0309/LeetCode/tree/master/0062-unique-paths) |
 | [0066-plus-one](https://github.com/Shasha0309/LeetCode/tree/master/0066-plus-one) |
+| [0067-add-binary](https://github.com/Shasha0309/LeetCode/tree/master/0067-add-binary) |
 | [0070-climbing-stairs](https://github.com/Shasha0309/LeetCode/tree/master/0070-climbing-stairs) |
 | [0189-rotate-array](https://github.com/Shasha0309/LeetCode/tree/master/0189-rotate-array) |
 | [0268-missing-number](https://github.com/Shasha0309/LeetCode/tree/master/0268-missing-number) |
@@ -623,6 +625,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Bit Manipulation
 |  |
 | ------- |
+| [0067-add-binary](https://github.com/Shasha0309/LeetCode/tree/master/0067-add-binary) |
 | [0090-subsets-ii](https://github.com/Shasha0309/LeetCode/tree/master/0090-subsets-ii) |
 | [0268-missing-number](https://github.com/Shasha0309/LeetCode/tree/master/0268-missing-number) |
 | [0389-find-the-difference](https://github.com/Shasha0309/LeetCode/tree/master/0389-find-the-difference) |
@@ -697,6 +700,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0054-spiral-matrix](https://github.com/Shasha0309/LeetCode/tree/master/0054-spiral-matrix) |
+| [0067-add-binary](https://github.com/Shasha0309/LeetCode/tree/master/0067-add-binary) |
 | [0657-robot-return-to-origin](https://github.com/Shasha0309/LeetCode/tree/master/0657-robot-return-to-origin) |
 | [0682-baseball-game](https://github.com/Shasha0309/LeetCode/tree/master/0682-baseball-game) |
 | [0735-asteroid-collision](https://github.com/Shasha0309/LeetCode/tree/master/0735-asteroid-collision) |
