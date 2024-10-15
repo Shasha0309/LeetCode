@@ -1,21 +1,15 @@
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
-        map<long long, int> mpp;
-        long long sum = 0;
-        vector<int> ans(2,0);
+        map<int,int> mpp;
+        vector<int> ans;
         for(int i=0;i<nums.size();i++){
-            sum = nums[i];
-
-            long long rem = target-sum;
-            if(mpp.find(rem)!=mpp.end()){
-                ans[0] = mpp[rem];
-                ans[1] = i;
+            if(mpp.find(target-nums[i])!=mpp.end()){
+                ans.push_back(mpp[target-nums[i]]);
+                ans.push_back(i);
                 break;
             }
-            if(mpp.find(nums[i])==mpp.end()){
-                mpp[nums[i]] = i;
-            }
+            mpp[nums[i]] = i;
         }
         return ans;
     }
