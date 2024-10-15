@@ -215,6 +215,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0198-house-robber](https://github.com/Shasha0309/LeetCode/tree/master/0198-house-robber) |
 | [0213-house-robber-ii](https://github.com/Shasha0309/LeetCode/tree/master/0213-house-robber-ii) |
 | [0217-contains-duplicate](https://github.com/Shasha0309/LeetCode/tree/master/0217-contains-duplicate) |
+| [0219-contains-duplicate-ii](https://github.com/Shasha0309/LeetCode/tree/master/0219-contains-duplicate-ii) |
 | [0229-majority-element-ii](https://github.com/Shasha0309/LeetCode/tree/master/0229-majority-element-ii) |
 | [0268-missing-number](https://github.com/Shasha0309/LeetCode/tree/master/0268-missing-number) |
 | [0283-move-zeroes](https://github.com/Shasha0309/LeetCode/tree/master/0283-move-zeroes) |
@@ -277,6 +278,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0160-intersection-of-two-linked-lists](https://github.com/Shasha0309/LeetCode/tree/master/0160-intersection-of-two-linked-lists) |
 | [0169-majority-element](https://github.com/Shasha0309/LeetCode/tree/master/0169-majority-element) |
 | [0217-contains-duplicate](https://github.com/Shasha0309/LeetCode/tree/master/0217-contains-duplicate) |
+| [0219-contains-duplicate-ii](https://github.com/Shasha0309/LeetCode/tree/master/0219-contains-duplicate-ii) |
 | [0229-majority-element-ii](https://github.com/Shasha0309/LeetCode/tree/master/0229-majority-element-ii) |
 | [0242-valid-anagram](https://github.com/Shasha0309/LeetCode/tree/master/0242-valid-anagram) |
 | [0268-missing-number](https://github.com/Shasha0309/LeetCode/tree/master/0268-missing-number) |
@@ -350,6 +352,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/Shasha0309/LeetCode/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0076-minimum-window-substring](https://github.com/Shasha0309/LeetCode/tree/master/0076-minimum-window-substring) |
+| [0219-contains-duplicate-ii](https://github.com/Shasha0309/LeetCode/tree/master/0219-contains-duplicate-ii) |
 | [0424-longest-repeating-character-replacement](https://github.com/Shasha0309/LeetCode/tree/master/0424-longest-repeating-character-replacement) |
 | [0966-binary-subarrays-with-sum](https://github.com/Shasha0309/LeetCode/tree/master/0966-binary-subarrays-with-sum) |
 | [1034-subarrays-with-k-different-integers](https://github.com/Shasha0309/LeetCode/tree/master/1034-subarrays-with-k-different-integers) |
