@@ -178,6 +178,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/Shasha0309/LeetCode/tree/master/0001-two-sum) |
+| [0011-container-with-most-water](https://github.com/Shasha0309/LeetCode/tree/master/0011-container-with-most-water) |
 | [0015-3sum](https://github.com/Shasha0309/LeetCode/tree/master/0015-3sum) |
 | [0018-4sum](https://github.com/Shasha0309/LeetCode/tree/master/0018-4sum) |
 | [0031-next-permutation](https://github.com/Shasha0309/LeetCode/tree/master/0031-next-permutation) |
@@ -419,6 +420,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Two Pointers
 |  |
 | ------- |
+| [0011-container-with-most-water](https://github.com/Shasha0309/LeetCode/tree/master/0011-container-with-most-water) |
 | [0015-3sum](https://github.com/Shasha0309/LeetCode/tree/master/0015-3sum) |
 | [0018-4sum](https://github.com/Shasha0309/LeetCode/tree/master/0018-4sum) |
 | [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/Shasha0309/LeetCode/tree/master/0028-find-the-index-of-the-first-occurrence-in-a-string) |
@@ -442,6 +444,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Greedy
 |  |
 | ------- |
+| [0011-container-with-most-water](https://github.com/Shasha0309/LeetCode/tree/master/0011-container-with-most-water) |
 | [0044-wildcard-matching](https://github.com/Shasha0309/LeetCode/tree/master/0044-wildcard-matching) |
 | [0045-jump-game-ii](https://github.com/Shasha0309/LeetCode/tree/master/0045-jump-game-ii) |
 | [0055-jump-game](https://github.com/Shasha0309/LeetCode/tree/master/0055-jump-game) |
