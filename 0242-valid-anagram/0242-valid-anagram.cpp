@@ -7,7 +7,7 @@ public:
             mpp[s[i]]++;
         }
         for(int i=0;i<t.length();i++){
-            if(mpp.find(t[i])==mpp.end() || mpp[t[i]]==0) return false;
+            if(mpp[t[i]]==0) return false;
             mpp[t[i]]--;
         }
         return true;
