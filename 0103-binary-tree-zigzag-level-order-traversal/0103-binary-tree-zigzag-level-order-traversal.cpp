@@ -15,21 +15,21 @@ public:
         vector<vector<int>> ans;
         if(root==NULL) return ans;
         queue<TreeNode*> q;
+        int an = -1;
         q.push(root);
-        int cnt = -1;
         while(!q.empty()){
+            vector<int> res;
             int n = q.size();
-            vector<int> level;
             for(int i=0;i<n;i++){
                 TreeNode* node = q.front();
                 q.pop();
                 if(node->left != NULL) q.push(node->left);
-                if(node->right != NULL) q.push(node->right);
-                level.push_back(node->val);
+                if(node->right != NULL) q.push(node->right); 
+                res.push_back(node->val);
             }
-            cnt++;
-            if(cnt%2!=0) reverse(level.begin(),level.end()); 
-            ans.push_back(level);
+            an++;
+                if(an%2!=0) reverse(res.begin(),res.end());
+                ans.push_back(res);
         }
         return ans;
     }
