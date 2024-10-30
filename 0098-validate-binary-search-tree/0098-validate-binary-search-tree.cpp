@@ -17,8 +17,8 @@ class Solution {
     }
 public:
     bool isValidBST(TreeNode* root) {
-        long long min = -1000000000;
-        long long max = 1000000000;
+        long long min = -1000000000000;
+        long long max = 1000000000000;
         if(root->left==NULL && root->right==NULL) return true;
         return solve(root,min,max);
     }
