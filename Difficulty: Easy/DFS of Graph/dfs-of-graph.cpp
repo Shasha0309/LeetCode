@@ -2,12 +2,13 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+
 // } Driver Code Ends
 class Solution {
-    void solve(int node, vector<int> adj[], int vis[], vector<int>& dfs){
+    void solve(int node,vector<vector<int>>& adj,int vis[],vector<int>& dfs){
         vis[node]=1;
         dfs.push_back(node);
-        for(auto it: adj[node]){
+        for(auto it : adj[node]){
             if(!vis[it]){
                 solve(it,adj,vis,dfs);
             }
@@ -15,8 +16,9 @@ class Solution {
     }
   public:
     // Function to return a list containing the DFS traversal of the graph.
-    vector<int> dfsOfGraph(int V, vector<int> adj[]) {
+    vector<int> dfsOfGraph(vector<vector<int>>& adj) {
         // Code here
+        int V = adj.size();
         int vis[V] = {0};
         vector<int> dfs;
         solve(0,adj,vis,dfs);
@@ -25,6 +27,7 @@ class Solution {
 };
 
 //{ Driver Code Starts.
+
 int main() {
     int tc;
     cin >> tc;
@@ -32,7 +35,8 @@ int main() {
         int V, E;
         cin >> V >> E;
 
-        vector<int> adj[V];
+        vector<vector<int>> adj(
+            V); // Use vector of vectors instead of array of vectors.
 
         for (int i = 0; i < E; i++) {
             int u, v;
@@ -40,15 +44,16 @@ int main() {
             adj[u].push_back(v);
             adj[v].push_back(u);
         }
-        // string s1;
-        // cin>>s1;
+
         Solution obj;
-        vector<int> ans = obj.dfsOfGraph(V, adj);
+        vector<int> ans = obj.dfsOfGraph(adj);
         for (int i = 0; i < ans.size(); i++) {
             cout << ans[i] << " ";
         }
         cout << endl;
+        cout << "~" << endl;
     }
     return 0;
 }
+
 // } Driver Code Ends
