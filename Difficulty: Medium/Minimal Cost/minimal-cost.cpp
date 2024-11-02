@@ -5,40 +5,53 @@ using namespace std;
 
 // } Driver Code Ends
 class Solution {
-    int solve(vector<int> &nums,vector<int>& dp,int n,int k){
+    int solve(int k,vector<int>& dp,vector<int> &nums,int n){ 
         int ans = INT_MAX;
         dp[0] = 0;
         if(dp[n] != -1) return dp[n];
         for(int i=1;i<=k;i++){
-           if(n-i>=0) {int right = solve(nums,dp,n-i,k) + abs(nums[n]-nums[n-i]);
+           if(n-i>=0) {int right = solve(k,dp,nums,n-i) + abs(nums[n]-nums[n-i]);
             ans = min(ans,right);
            }
         }
         return dp[n] = ans;
     }
   public:
-    int minimizeCost(vector<int>& height, int n, int k) {
+    int minimizeCost(int k, vector<int>& arr) {
         // Code here
+        int n = arr.size();
         vector<int> dp(n+1,-1);
-        return solve(height,dp,n-1,k);
+        int res = solve(k,dp,arr,n-1);
+        return res;
     }
 };
 
 //{ Driver Code Starts.
 
 int main() {
-    int t;
-    cin >> t;
+    string ts;
+    getline(cin, ts);
+    int t = stoi(ts);
     while (t--) {
-        int N, K;
-        cin >> N >> K;
-        vector<int> arr(N);
-        for (int i = 0; i < N; i++) {
-            cin >> arr[i];
+        string ks;
+        getline(cin, ks);
+        int k = stoi(ks);
+        vector<int> arr;
+        string input;
+        getline(cin, input);
+        stringstream ss(input);
+        int number;
+        while (ss >> number) {
+            arr.push_back(number);
         }
         Solution obj;
-        cout << obj.minimizeCost(arr, N, K) << "\n";
+        int res = obj.minimizeCost(k, arr);
+        cout << res << endl;
+        cout << "~" << endl;
+        // string tl;
+        // getline(cin, tl);
     }
     return 0;
 }
+
 // } Driver Code Ends
