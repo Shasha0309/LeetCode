@@ -5,13 +5,11 @@ using namespace std;
 
 // } Driver Code Ends
 class Solution {
-    int solve(vector<vector<int>>& nums,int days,int last,vector<vector<int>>& dp){
+    int solve(int days,vector<vector<int>>& arr,vector<vector<int>>& dp,int last){
         if(days==0){
-            int maxi = 0;
+            int maxi=0;
             for(int i=0;i<=2;i++){
-                if(i!=last){
-                    maxi = max(maxi,nums[days][i]);
-                }
+                if(i!=last) maxi = max(maxi,arr[days][i]);
             }
             return maxi;
         }
@@ -19,17 +17,17 @@ class Solution {
         int maxi = 0;
         for(int i=0;i<=2;i++){
             if(i!=last){
-                int points = nums[days][i] + solve(nums,days-1,i,dp);
-                 maxi = max(maxi,points);
-            }
+            int points = arr[days][i] + solve(days-1,arr,dp,i);
+            maxi = max(maxi,points);
+        }
         }
         return dp[days][last] = maxi;
     }
   public:
     int maximumPoints(vector<vector<int>>& arr, int n) {
         // Code here
-        vector<vector<int>> dp(n,vector<int>(4,-1));
-        return solve(arr,n-1,3,dp);
+        vector<vector<int>> dp(n+1,vector<int>(4,-1));
+        return solve(n-1,arr,dp,3);
     }
 };
 
@@ -53,6 +51,7 @@ int main() {
 
         Solution obj;
         cout << obj.maximumPoints(arr, n) << endl;
+        cout << "~" << endl;
     }
     return 0;
 }
