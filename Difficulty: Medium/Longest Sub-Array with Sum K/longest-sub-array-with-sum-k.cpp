@@ -4,58 +4,58 @@ using namespace std;
 
 
 // } Driver Code Ends
-class Solution{
-    public:
-    int lenOfLongSubarr(int A[],  int N, int K) 
-    { 
-        // Complete the function
-        long long sum = 0;
+class Solution {
+  public:
+    int lenOfLongestSubarr(vector<int>& arr, int k) {
+        // code here
+        int l=0;
+        int r=0;
+        int sum = 0;
         int maxlen = 0;
-        map<long long,int> mpp;
-        for(int i=0;i<N;i++){
-            sum += A[i];
+        while(r<arr.size()){
             
-            if(sum==K){
-                maxlen = max(maxlen,i+1);
-            }
-            
-            long long rem = sum-K;
-            
-            if(mpp.find(rem)!=mpp.end()){
-                int len = i-mpp[rem];
-                maxlen = max(maxlen,len);
-            }
-            
-            if(mpp.find(sum)==mpp.end()){
-                mpp[sum] = i;
-                
-            }
+                sum+=arr[r];
+             while (sum > k && l <= r) {
+            sum -= arr[l];
+            l++;
         }
-        
+            if(sum==k){
+                maxlen = max(maxlen,1+r-l);
+            }
+            r++;
+        }
         return maxlen;
-    } 
-
+    }
 };
 
 //{ Driver Code Starts.
 
 int main() {
-	//code
-	
-	int t;cin>>t;
-	while(t--)
-	{
-	    int n, k;
-	    cin>> n >> k;
-	    int a[n];
-	    
-	    for(int i=0;i<n;i++)
-	        cin>>a[i];
-	   Solution ob;
-	   cout << ob.lenOfLongSubarr(a, n , k)<< endl;
-	    
-	}
-	
-	return 0;
+    int t;
+    cin >> t;
+    cin.ignore(); // Ignore newline character after t
+
+    while (t--) {
+        vector<int> arr;
+        int k;
+        string inputLine;
+
+        getline(cin, inputLine); // Read the array input as a line
+        stringstream ss(inputLine);
+        int value;
+        while (ss >> value) {
+            arr.push_back(value);
+        }
+
+        cin >> k;
+        cin.ignore(); // Ignore newline character after k input
+
+        Solution solution;
+        cout << solution.lenOfLongestSubarr(arr, k) << "\n";
+        cout << "~\n";
+    }
+
+    return 0;
 }
+
 // } Driver Code Ends
