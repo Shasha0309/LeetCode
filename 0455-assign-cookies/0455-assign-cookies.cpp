@@ -5,14 +5,14 @@ public:
         sort(g.begin(),g.end());
         int l=0;
         int r=0;
-        int ans = 0;
+        
         while(l<g.size() && r<s.size()){
             if(s[r]>=g[l]){
-                ans++;
+                
                 l++;
             }
             r++;
         }
-        return ans;
+        return l;
     }
 };
