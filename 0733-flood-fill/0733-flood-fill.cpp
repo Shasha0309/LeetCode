@@ -1,23 +1,24 @@
 class Solution {
-    void dfs(int inicolor,vector<vector<int>>& adj,int color,int sr,int sc,int row[],int col[],vector<vector<int>>& image){
-        int n = image.size();
-        int m = image[0].size();
-        adj[sr][sc] = color;
+    void solve(int incolor,vector<vector<int>>& adj,int drow[],int dcol[],int sr,int sc,int color,vector<vector<int>>& img){
+        int n = img.size();
+        int m = img[0].size();
+        adj[sr][sc]=color;
         for(int i=0;i<4;i++){
-            int newrow = sr+row[i];
-            int newcol = sc+col[i];
-            if(newrow>=0 && newrow<n && newcol>=0 && newcol<m && image[newrow][newcol]==inicolor && adj[newrow][newcol]!=color){
-                dfs(inicolor,adj,color,newrow,newcol,row,col,image);
-            }
+             int row = sr+drow[i];
+             int col = sc+dcol[i];
+             if(row>=0 && row<n && col>=0 && col<m && img[row][col]==incolor && adj[row][col]!=color){
+                solve(incolor,adj,drow,dcol,row,col,color,img);
+             }
         }
+
     }
 public:
     vector<vector<int>> floodFill(vector<vector<int>>& image, int sr, int sc, int color) {
-        int inicolor = image[sr][sc];
+        int incolor = image[sr][sc];
         vector<vector<int>> adj = image;
         int drow[] = {1,0,-1,0};
         int dcol[] = {0,1,0,-1};
-        dfs(inicolor,adj,color,sr,sc,drow,dcol,image);
+        solve(incolor,adj,drow,dcol,sr,sc,color,image);
         return adj;
     }
 };
