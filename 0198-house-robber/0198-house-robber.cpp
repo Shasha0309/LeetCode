@@ -1,20 +1,16 @@
 class Solution {
-    int solve(vector<int> &nums,vector<int>& dp,int ind){
-         dp[0] = nums[0];
-
-         for(int i=1;i<ind;i++){
-         int pick = nums[i];
-         if(i>1) pick += dp[i-2];
-         int notpick = dp[i-1];
-         
-        dp[i] = max(pick,notpick);
-         }
-         return dp[ind-1];
+    int solve(vector<int>& dp,vector<int>& num,int ind){
+        if(ind==0) return num[0];
+        if(ind<0) return 0;
+        if(dp[ind]!=-1) return dp[ind];
+        int ntake = 0+solve(dp,num,ind-1);
+        int take = num[ind]+solve(dp,num,ind-2);
+        return dp[ind]=max(ntake,take);
     }
 public:
     int rob(vector<int>& nums) {
         int n = nums.size();
-        vector<int> dp(n,-1);
-        return solve(nums,dp,n);
+        vector<int> dp(n+1,-1);
+        return solve(dp,nums,n-1);
     }
 };
