@@ -5,19 +5,20 @@ using namespace std;
 
 // } Driver Code Ends
 class Solution {
-    int solve(vector<int>& dp,vector<int> &nums,int n){
-        dp[0] = 0;
-        if(dp[n]!=-1) return dp[n];
-        int right = INT_MAX;
-        int left = solve(dp,nums,n-1) + abs(nums[n]-nums[n-1]);
-        if(n>1) right = solve(dp,nums,n-2) + abs(nums[n]-nums[n-2]);
-        return dp[n] = min(left,right);
+    int solve(vector<int>& dp,vector<int>& height,int ind){
+        if(ind==0) return 0;
+        if(dp[ind]!=-1) return dp[ind];
+        int jutwo = INT_MAX;
+        int jutone = solve(dp,height,ind-1)+abs(height[ind-1]-height[ind]);
+        if(ind>1) jutwo = solve(dp,height,ind-2)+abs(height[ind-2]-height[ind]);
+        return dp[ind]=min(jutone,jutwo);
     }
   public:
     int minimumEnergy(vector<int>& height, int n) {
         // Code here
         vector<int> dp(n+1,-1);
-        return solve(dp,height,n-1);
+        int res = solve(dp,height,n-1);
+        return res;
     }
 };
 
@@ -35,7 +36,9 @@ int main() {
         }
         Solution obj;
         cout << obj.minimumEnergy(arr, N) << "\n";
-    }
+    
+cout << "~" << "\n";
+}
     return 0;
 }
 // } Driver Code Ends
