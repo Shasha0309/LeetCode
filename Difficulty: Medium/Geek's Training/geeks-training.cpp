@@ -5,29 +5,29 @@ using namespace std;
 
 // } Driver Code Ends
 class Solution {
-    int solve(int days,vector<vector<int>>& arr,vector<vector<int>>& dp,int last){
+    int solve(vector<vector<int>>& arr,vector<vector<int>>& dp,int days,int k){
         if(days==0){
-            int maxi=0;
+            int maxi = 0;
             for(int i=0;i<=2;i++){
-                if(i!=last) maxi = max(maxi,arr[days][i]);
+                
+                if(i!=k) maxi = max(maxi,arr[0][i]);
             }
             return maxi;
         }
-        if(dp[days][last]!=-1) return dp[days][last];
+        if(dp[days][k]!=-1) return dp[days][k];
         int maxi = 0;
+        int ans = INT_MIN;
         for(int i=0;i<=2;i++){
-            if(i!=last){
-            int points = arr[days][i] + solve(days-1,arr,dp,i);
-            maxi = max(maxi,points);
+            if(i!=k)  ans = arr[days][i] + solve(arr,dp,days-1,i);
+            maxi = max(maxi,ans);
         }
-        }
-        return dp[days][last] = maxi;
+        return dp[days][k] = maxi;
     }
   public:
     int maximumPoints(vector<vector<int>>& arr, int n) {
         // Code here
         vector<vector<int>> dp(n+1,vector<int>(4,-1));
-        return solve(n-1,arr,dp,3);
+        return solve(arr,dp,n-1,3);
     }
 };
 
