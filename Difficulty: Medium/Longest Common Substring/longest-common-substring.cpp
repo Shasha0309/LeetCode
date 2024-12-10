@@ -6,7 +6,7 @@ using namespace std;
 // } Driver Code Ends
 class Solution {
   public:
-    int longestCommonSubstr(string s1, string s2) {
+    int longestCommonSubstr(string& s1, string& s2) {
         // your code here
         int n1 = s1.size();
         int n2 = s2.size();
@@ -31,6 +31,7 @@ class Solution {
             }
         }
         return ans;
+        
     }
 };
 
@@ -45,6 +46,10 @@ int main() {
         Solution ob;
 
         cout << ob.longestCommonSubstr(s1, s2) << endl;
+
+        cout << "~"
+             << "\n";
     }
 }
+
 // } Driver Code Ends
