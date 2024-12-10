@@ -1,21 +1,20 @@
 class Solution {
+    int solve(vector<int>& arr,vector<vector<int>>& dp,int ind,int tar){
+        if(ind==0){
+            if(tar%arr[0]==0) return tar/arr[0];
+            else return 1e9+7;
+        }
+        if(dp[ind][tar]!=-1) return dp[ind][tar];
+        int ntake = 0+solve(arr,dp,ind-1,tar);
+        int take = 1e9;
+        if(arr[ind]<=tar) take = 1+solve(arr,dp,ind,tar-arr[ind]);
+        return dp[ind][tar] = min(ntake,take);
+    }
 public:
     int coinChange(vector<int>& coins, int amount) {
         int n = coins.size();
-        vector<vector<int>> dp(n, vector<int>(amount+1,0));
-        for(int i=0;i<=amount;i++){
-            if(i%coins[0]==0) dp[0][i] = i/coins[0];
-            else dp[0][i] = 1e9;
-        }
-        for(int i=1;i<n;i++){
-            for(int amt=0;amt<=amount;amt++){
-                int nottake = 0 + dp[i-1][amt];
-                int take = 1e9;
-                if(coins[i]<=amt) take = 1 + dp[i][amt-coins[i]];
-                dp[i][amt] = min(nottake,take);
-            }
-        }
-        int ans = dp[n-1][amount];
+        vector<vector<int>> dp(n,vector<int>(amount+1,-1));
+        int ans =  solve(coins,dp,n-1,amount);
         if(ans>=1e9) return -1;
         return ans;
     }
