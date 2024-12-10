@@ -6,7 +6,7 @@ class Solution {
         bool ntake = solve(nums,dp,tar,ind-1);
         bool take = false;
         if(nums[ind]>=tar) take = solve(nums,dp,tar-nums[ind],ind-1);
-        return dp[ind][tar] = (take || ntake);
+        return dp[ind][tar] = ntake || take;
     }
 public:
     bool canPartition(vector<int>& nums) {
