@@ -15,9 +15,11 @@ public:
         for(int i=0;i<n;i++){
             sum+=nums[i];
         }
-        if(sum%2!=0) return false;
+        if(sum%2==1) return false;
+        else{
         int k = sum/2;
         vector<vector<int>> dp(n,vector<int>(k+1,-1));
         return solve(nums,dp,k,n-1);
+        }
     }
 };
