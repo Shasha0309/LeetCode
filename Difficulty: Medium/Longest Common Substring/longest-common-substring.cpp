@@ -11,12 +11,12 @@ class Solution {
         int n1 = s1.size();
         int n2 = s2.size();
         vector<vector<int>> dp(n1+1,vector<int>(n2+1,0));
-        for(int i=0;i<=n1;i++){
+       /* for(int i=0;i<=n1;i++){
             dp[i][0] = 0;
         }
         for(int i=0;i<=n2;i++){
             dp[0][i] = 0;
-        }
+        }*/
         int ans = 0;
         
         for(int i=1;i<=n1;i++){
