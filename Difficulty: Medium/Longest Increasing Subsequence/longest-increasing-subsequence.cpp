@@ -1,53 +1,58 @@
 //{ Driver Code Starts
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
+
 
 // } Driver Code Ends
 
 
-class Solution
-{
-    public:
-    //Function to find length of longest increasing subsequence.
-    int longestSubsequence(int n, int a[])
-    {
-       // your code here
-       int len = 1;
-       vector<int> temp;
-       temp.push_back(a[0]);
-       for(int i=1;i<n;i++){
-           if(a[i]>temp.back()){
-               temp.push_back(a[i]);
-               len++;
-           }
-           else{
-               int ind = lower_bound(temp.begin(),temp.end(),a[i])-temp.begin();
-               temp[ind] = a[i];
-           }
-       }
-       return len;
+class Solution {
+  public:
+    // Function to find length of longest increasing subsequence.
+    int longestSubsequence(vector<int>& arr) {
+        // code here
+        vector<int> temp;
+        int n = arr.size();
+        temp.push_back(arr[0]);
+        int len = 1;
+        for(int i=1;i<n;i++){
+            if(temp.back()<arr[i]){
+                 temp.push_back(arr[i]);
+                 len++;
+            }
+            else{
+                int ind = lower_bound(temp.begin(),temp.end(),arr[i])-temp.begin();
+                temp[ind]=arr[i];
+            }
+        }
+        return len;
     }
 };
 
 //{ Driver Code Starts.
-int main()
-{
-    //taking total testcases
-    int t,n;
-    cin>>t;
-    while(t--)
-    {
-        //taking size of array
-        cin>>n;
-        int a[n];
-        
-        //inserting elements to the array
-        for(int i=0;i<n;i++)
-            cin>>a[i];
-        Solution ob;
-        //calling method longestSubsequence()
-        cout << ob.longestSubsequence(n, a) << endl;
+
+int main() {
+    int t;
+    cin >> t;
+    cin.ignore(); // to ignore the newline after the integer input
+
+    while (t--) {
+        int n;
+        vector<int> arr;
+        string input;
+
+        // Input format: first number n followed by the array elements
+        getline(cin, input);
+        stringstream ss(input);
+        int num;
+        while (ss >> num)
+            arr.push_back(num);
+
+        Solution obj;
+        cout << obj.longestSubsequence(arr) << endl;
     }
+
+    return 0;
 }
 
 // } Driver Code Ends
