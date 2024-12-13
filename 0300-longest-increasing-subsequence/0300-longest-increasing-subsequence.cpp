@@ -1,25 +1,19 @@
 class Solution {
+    int solve(vector<int>& num,vector<vector<int>>& dp,int n,int ind,int prev){
+        if(ind==n) return 0;
+        if(dp[ind][prev+1]!=-1) return dp[ind][prev+1];
+
+        int ntake = 0+solve(num,dp,n,ind+1,prev);
+        int take = 0;
+        if(prev==-1 || num[ind]>num[prev]){
+            take = 1+solve(num,dp,n,ind+1,ind);
+        }
+        return dp[ind][prev+1] = max(ntake,take);
+    }
 public:
     int lengthOfLIS(vector<int>& nums) {
         int n = nums.size();
-        vector<vector<int>> dp(n+1,vector<int>(n+1,0));
-        for(int curr=n-1;curr>=0;curr--)
-        {
-            for(int prev=curr-1;prev>=-1;prev--)
-            {
-                //include
-                int take=0;
-                if(prev==-1 || nums[curr]>nums[prev])
-                {
-                    take=1+dp[curr+1][curr+1];
-                }
-
-                //exclude
-                int notTake=0+dp[curr+1][prev+1];
-
-                dp[curr][prev+1]=max(take,notTake);
-            }
-        }
-        return dp[0][-1+1];
+        vector<vector<int>> dp(n,vector<int>(n+1,-1));
+       return solve(nums,dp,n,0,-1);
     }
 };
