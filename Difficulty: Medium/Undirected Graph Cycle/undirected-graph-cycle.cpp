@@ -2,30 +2,38 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+
 // } Driver Code Ends
 class Solution {
-    private:
-    bool solve(int src,int node,int vis[],vector<int> adj[]){
+    bool solve(int src,vector<int>& vis,vector<vector<int>>& adj){
         vis[src] = 1;
-            for(auto it : adj[src]){
+        queue<pair<int,int>> q;
+        q.push({src,-1});
+        while(!q.empty()){
+            int node = q.front().first;
+            int parent = q.front().second;
+            q.pop();
+            for(auto it:adj[node]){
                 if(!vis[it]){
-                    if(solve(it,src,vis,adj)==true) return true;
+                    vis[it]=1;
+                    q.push({it,node});
                 }
-                else if(it!=node){
+                else if(it!=parent){
                     return true;
                 }
             }
-        
+        }
         return false;
     }
   public:
     // Function to detect cycle in an undirected graph.
-    bool isCycle(int V, vector<int> adj[]) {
+    bool isCycle(vector<vector<int>>& adj) {
         // Code here
-         int vis[V] = {0};
-        for(int i=0;i<V;i++){
+        vector<int> vis(adj.size(),0);
+        
+        for(int i=0;i<adj.size();i++){
             if(!vis[i]){
-                if(solve(i,-1,vis,adj)==true) return true;
+                if(solve(i,vis,adj)) return true;
             }
         }
         return false;
@@ -39,7 +47,7 @@ int main() {
     while (tc--) {
         int V, E;
         cin >> V >> E;
-        vector<int> adj[V];
+        vector<vector<int>> adj(V);
         for (int i = 0; i < E; i++) {
             int u, v;
             cin >> u >> v;
@@ -47,11 +55,14 @@ int main() {
             adj[v].push_back(u);
         }
         Solution obj;
-        bool ans = obj.isCycle(V, adj);
+        bool ans = obj.isCycle(adj);
         if (ans)
             cout << "1\n";
         else
             cout << "0\n";
+
+        cout << "~"
+             << "\n";
     }
     return 0;
 }
