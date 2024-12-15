@@ -29,7 +29,7 @@ public:
             if(grid[i][0]==1 && !vis[i][0]){
                 dfs(vis,grid,i,0,n,m);
             }
-            if(grid[i][m-1]==1 && !vis[i][0]){
+            if(grid[i][m-1]==1 && !vis[i][m-1]){
                 dfs(vis,grid,m-1,0,n,m);
             }
         }
