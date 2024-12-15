@@ -7,12 +7,13 @@ class Solution {
             int rr = drow[i]+r;
             int cc = dcol[i]+c;
             if(rr>=0 && rr<n && cc>=0 && cc<m && grid[rr][cc]==1 && !vis[rr][cc]){
-                dfs(vis,grid,rr,cc,n,m);;
+                dfs(vis,grid,rr,cc,n,m);
             }
         }
     }
 public:
     int numEnclaves(vector<vector<int>>& grid) {
+        if(grid.empty()) return 0;
         int n = grid.size();
         int m = grid[0].size();
         vector<vector<int>> vis(n,vector<int>(m,0));
@@ -30,7 +31,7 @@ public:
                 dfs(vis,grid,i,0,n,m);
             }
             if(grid[i][m-1]==1 && !vis[i][m-1]){
-                dfs(vis,grid,m-1,0,n,m);
+                dfs(vis,grid,i,m-1,n,m);
             }
         }
         int cnt=0;
