@@ -18,7 +18,7 @@ public:
         while(!q.empty()){
             int node = q.front();
             q.pop();
-            vector<int> ans;
+        
             ans.push_back(node);
             for(auto it:adj[node]){
                 indeg[it]--;
