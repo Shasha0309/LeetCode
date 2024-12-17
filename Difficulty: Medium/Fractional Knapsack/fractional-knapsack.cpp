@@ -5,42 +5,40 @@ using namespace std;
 
 // } Driver Code Ends
 // class implemented
-/*
+
 struct Item{
     int value;
     int weight;
 };
-*/
+
 
 class Solution {
   public:
     // Function to get the maximum total value in the knapsack.
     double fractionalKnapsack(vector<int>& val, vector<int>& wt, int capacity) {
         // Your code here
-          vector<pair<double, int>> a(val.size());
-
-        int j = 0;
-        double max = 0;
-        for(int i = 0; i < val.size(); i++) {
-            a[i] = { (double)val[i] / wt[i], wt[i] };
+        vector<pair<double,int>> a(val.size());
+        
+        for(int i=0;i<val.size();i++){
+            a[i] = { (double)val[i]/wt[i],wt[i] };
         }
-
-        // Correctly closing the sort function's lambda and the `sort` call.
-        sort(a.begin(), a.end(), [](pair<double, int>& p1, pair<double, int>& p2) {
-            return p1.first > p2.first; // Sort by value-to-weight ratio in descending order
-        });//this function is requires here because we want in descending order instead of ascending order
-
-        while(capacity > 0 && j < a.size()) {    
-            if(capacity > a[j].second) {
-                max += a[j].first * a[j].second;
-                capacity -= a[j].second;
-            } else {
-                max += a[j].first * capacity;
-                capacity = 0;
+        
+        sort(a.begin(),a.end(),[](pair<double,int>& p1 , pair<double,int>& p2){
+            return p1.first>p2.first;
+        });
+        
+        double ans = 0.0;
+        for(int i=0;i<val.size();i++){
+            if(a[i].second<capacity){
+                capacity -= a[i].second;
+                ans += a[i].first * a[i].second;
             }
-            j++;
+            else{
+                ans += a[i].first*capacity;
+                break;
+            }
         }
-        return max;
+        return ans;
     }
 };
 
