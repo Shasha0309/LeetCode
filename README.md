@@ -213,6 +213,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/Shasha0309/LeetCode/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
 | [0123-best-time-to-buy-and-sell-stock-iii](https://github.com/Shasha0309/LeetCode/tree/master/0123-best-time-to-buy-and-sell-stock-iii) |
 | [0130-surrounded-regions](https://github.com/Shasha0309/LeetCode/tree/master/0130-surrounded-regions) |
+| [0135-candy](https://github.com/Shasha0309/LeetCode/tree/master/0135-candy) |
 | [0150-evaluate-reverse-polish-notation](https://github.com/Shasha0309/LeetCode/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0152-maximum-product-subarray](https://github.com/Shasha0309/LeetCode/tree/master/0152-maximum-product-subarray) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/Shasha0309/LeetCode/tree/master/0153-find-minimum-in-rotated-sorted-array) |
@@ -496,6 +497,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0045-jump-game-ii](https://github.com/Shasha0309/LeetCode/tree/master/0045-jump-game-ii) |
 | [0055-jump-game](https://github.com/Shasha0309/LeetCode/tree/master/0055-jump-game) |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/Shasha0309/LeetCode/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
+| [0135-candy](https://github.com/Shasha0309/LeetCode/tree/master/0135-candy) |
 | [0402-remove-k-digits](https://github.com/Shasha0309/LeetCode/tree/master/0402-remove-k-digits) |
 | [0435-non-overlapping-intervals](https://github.com/Shasha0309/LeetCode/tree/master/0435-non-overlapping-intervals) |
 | [0455-assign-cookies](https://github.com/Shasha0309/LeetCode/tree/master/0455-assign-cookies) |
