@@ -4,8 +4,8 @@ public:
         sort(intervals.begin(),intervals.end());
         vector<vector<int>> ans;
         ans.push_back(intervals[0]);
-        int i=1;
-        while(i<intervals.size()){
+        
+        for(int i=1;i<intervals.size();i++){
             if(ans.back()[1]>=intervals[i][0]){
                 if(ans.back()[1]>intervals[i][1]) continue;
                 ans.back()[1]=intervals[i][1];
@@ -13,7 +13,7 @@ public:
             else{
                 ans.push_back(intervals[i]);
             }
-            i++;
+            
         }
         return ans;
     }
