@@ -7,7 +7,7 @@ public:
         int i=1;
         while(i<intervals.size()){
             if(ans.back()[1]>=intervals[i][0]){
-                if(ans.back()[1]>=intervals[i][1]) continue;
+                if(ans.back()[1]>intervals[i][1]) continue;
                 ans.back()[1]=intervals[i][1];
             }
             else{
