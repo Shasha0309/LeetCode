@@ -10,15 +10,17 @@
  * };
  */
 class Solution {
-    int solve(TreeNode* root){
-        return root==NULL ? 0:(1+max(solve(root->left),solve(root->right)));
-    }
+    int solve(TreeNode* node){
+        if(node==NULL) return 0;
+        int lefti = solve(node->left);
+        if(lefti==-1) return -1;
+        int righti = solve(node->right);
+        if(righti==-1) return -1;
+        if (abs(lefti-righti)>1) return -1;
+        return max(lefti,righti)+1;
+    } 
 public:
     bool isBalanced(TreeNode* root) {
-        if(root==NULL) return true;
-        int node1 = solve(root->left);
-        int node2 = solve(root->right);
-        if((abs(node2-node1)<=1) && isBalanced(root->left) && isBalanced(root->right)) return true;
-        return false;
+        return solve(root)!=-1;
     }
 };
