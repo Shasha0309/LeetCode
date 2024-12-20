@@ -102,11 +102,10 @@ struct Node
 */
 
 class Solution{
-    bool isleaf(Node* root){
-        if(root->left==NULL && root->right==NULL) return 1;
-        return 0;
-    }
     public:
+    bool isleaf(Node* root){
+        return !root->left && !root->right;
+    }
     //Function to check whether all nodes of a tree have the value 
     //equal to the sum of their child nodes.
     int isSumProperty(Node *root)
