@@ -143,21 +143,21 @@ struct Node
 */
 
 class Solution {
-    void solve(Node* root,vector<vector<int>> &ans,vector<int> temp){
+    void solve(vector<vector<int>>& ans,vector<int>& temp,Node* root){
         if(root==NULL) return;
-        
         temp.push_back(root->data);
         if(root->left==NULL && root->right==NULL) ans.push_back(temp);
-        solve(root->left,ans,temp);
-        solve(root->right,ans,temp);
+        solve(ans,temp,root->left);
+        solve(ans,temp,root->right);
         temp.pop_back();
     }
   public:
     vector<vector<int>> Paths(Node* root) {
         // code here
         vector<vector<int>> ans;
-        vector<int> res;
-        solve(root,ans,res);
+        if(root==NULL) return ans;
+        vector<int> temp;
+        solve(ans,temp,root);
         return ans;
     }
 };
@@ -177,7 +177,9 @@ int main(){
         
         Matrix::print(res);
         
-    }
+    
+cout << "~" << "\n";
+}
 }
 
 // } Driver Code Ends
