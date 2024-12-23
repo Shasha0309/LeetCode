@@ -10,52 +10,33 @@
  * };
  */
 class Solution {
-    private:
-    TreeNode* lastright(TreeNode* root){
-        if(root->right==NULL){
-            return root;
-        }
-        return lastright(root->right);
+
+    TreeNode* extreme(TreeNode* root){
+        if(root->right==NULL) return root;
+        return extreme(root->right);
     }
-    TreeNode* solver(TreeNode* root){
-        if(root->left==NULL){
-            return root->right;
-        }
-        else if(root->right==NULL){
-            return root->left;
-        }
-        
-            TreeNode* rightChild = root->right;
-            TreeNode* lastRight = lastright(root->left);
-            lastRight->right = rightChild;
-            return root->left;
-        
+    TreeNode* solve(TreeNode* root){
+        if(root->left==NULL) return root->right;
+        else if(root->right==NULL) return root->left;
+
+        TreeNode* rightchild = root->right;
+        TreeNode* lastchild = extreme(root->left);
+        lastchild->right=rightchild;
+        return root->left;
     }
 public:
     TreeNode* deleteNode(TreeNode* root, int key) {
         if(root==NULL) return NULL;
-        if(root->val==key){
-            return solver(root);
-        }
+        if(root->val==key) return solve(root);
         TreeNode* dummy = root;
         while(root!=NULL){
             if(root->val>key){
-                if(root->left!=NULL && root->left->val==key){
-                    root->left = solver(root->left);
-                    //break;
-                }
-                else{
-                    root=root->left;
-                }
+                if(root->left!=NULL && root->left->val==key) root->left = solve(root->left); 
+                root=root->left;
             }
             else{
-                if(root->right!=NULL && root->right->val==key){
-                    root->right = solver(root->right);
-                    //break;
-                }
-                else{
-                    root=root->right;
-                }
+                if(root->right!=NULL && root->right->val==key) root->right = solve(root->right); 
+                root=root->right;
             }
         }
         return dummy;
