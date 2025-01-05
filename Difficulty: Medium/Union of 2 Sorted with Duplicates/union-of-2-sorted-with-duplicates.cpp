@@ -12,16 +12,64 @@ class Solution {
     vector<int> findUnion(vector<int> &a, vector<int> &b) {
         // Your code here
         // return vector with correct order of elements
-        set<int> st;
-        for(int i=0;i<a.size();i++){
-            st.insert(a[i]);
+       /* int i=0;
+        int j=0;
+        vector<int> ans;
+        while(i<a.size() && j<b.size()){
+            if(a[i]<=b[j]) {
+                if(ans.size()==0 || ans.back()!=a[i]){
+                    ans.push_back(a[i]);
+                    i++;
+                }
+            }
+                else{
+                    if(ans.size()==0 || ans.back()!=b[j]){
+                        ans.push_back(b[j]);
+                        j++;
+                    }
+                }
+            }
+        while(i<a.size()){
+            if(ans.back()!=a[i]){
+            ans.push_back(a[i]);
+            i++;
+            }
         }
-        for(int i=0;i<b.size();i++){
-            st.insert(b[i]);
+        while(j<b.size()){
+            if(ans.back()!=b[j]){
+            ans.push_back(b[j]);
+            j++;
+            }
         }
-        
-        vector<int> ans(st.begin(),st.end());
-        return ans;
+        return ans;*/
+        int i = 0, j = 0; // pointers
+  vector < int > Union; // Uninon vector
+  while (i < a.size() && j < b.size()) {
+    if (a[i] <= b[j]) // Case 1 and 2
+    {
+      if (Union.size() == 0 || Union.back() != a[i])
+        Union.push_back(a[i]);
+      i++;
+    } else // case 3
+    {
+      if (Union.size() == 0 || Union.back() != b[j])
+        Union.push_back(b[j]);
+      j++;
+    }
+  }
+  while (i < a.size()) // IF any element left in arr1
+  {
+    if (Union.back() != a[i])
+      Union.push_back(a[i]);
+    i++;
+  }
+  while (j < b.size()) // If any elements left in arr2
+  {
+    if (Union.back() != b[j])
+      Union.push_back(b[j]);
+    j++;
+  }
+  return Union;
     }
 };
 
