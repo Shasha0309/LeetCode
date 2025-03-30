@@ -181,6 +181,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0011-container-with-most-water](https://github.com/Shasha0309/LeetCode/tree/master/0011-container-with-most-water) |
 | [0015-3sum](https://github.com/Shasha0309/LeetCode/tree/master/0015-3sum) |
 | [0018-4sum](https://github.com/Shasha0309/LeetCode/tree/master/0018-4sum) |
+| [0026-remove-duplicates-from-sorted-array](https://github.com/Shasha0309/LeetCode/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0031-next-permutation](https://github.com/Shasha0309/LeetCode/tree/master/0031-next-permutation) |
 | [0033-search-in-rotated-sorted-array](https://github.com/Shasha0309/LeetCode/tree/master/0033-search-in-rotated-sorted-array) |
 | [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/Shasha0309/LeetCode/tree/master/0034-find-first-and-last-position-of-element-in-sorted-array) |
@@ -473,6 +474,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0015-3sum](https://github.com/Shasha0309/LeetCode/tree/master/0015-3sum) |
 | [0018-4sum](https://github.com/Shasha0309/LeetCode/tree/master/0018-4sum) |
 | [0019-remove-nth-node-from-end-of-list](https://github.com/Shasha0309/LeetCode/tree/master/0019-remove-nth-node-from-end-of-list) |
+| [0026-remove-duplicates-from-sorted-array](https://github.com/Shasha0309/LeetCode/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/Shasha0309/LeetCode/tree/master/0028-find-the-index-of-the-first-occurrence-in-a-string) |
 | [0031-next-permutation](https://github.com/Shasha0309/LeetCode/tree/master/0031-next-permutation) |
 | [0042-trapping-rain-water](https://github.com/Shasha0309/LeetCode/tree/master/0042-trapping-rain-water) |
