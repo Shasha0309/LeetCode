@@ -11,14 +11,12 @@ public:
         mpp['D'] = 500;
         mpp['M'] = 1000;
         
-        int sum=0;
-        sum+=mpp[s[n-1]];
+        int ans=0;
+        ans+=mpp[s[n-1]];
         for(int i=n-2;i>=0;i--){
-            if(mpp[s[i]]<mpp[s[i+1]]){ sum-=mpp[s[i]]; }
-            else{
-                sum+=mpp[s[i]];
-            }
+            if(mpp[s[i]]<mpp[s[i+1]]) ans -= mpp[s[i]];
+            else ans += mpp[s[i]];
         }
-        return sum;
+        return ans;
     }
 };
