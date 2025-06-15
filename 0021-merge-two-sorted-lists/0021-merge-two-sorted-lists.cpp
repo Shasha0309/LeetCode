@@ -10,24 +10,18 @@
  */
 class Solution {
 public:
+
     ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
-        ListNode* head = new ListNode(-1);
-        ListNode* temp = head;
-        ListNode* fir = list1;
-        ListNode* sec = list2;
-        while(fir!=NULL && sec!=NULL){
-            if(fir->val <= sec->val){
-               temp->next = fir;
-               fir=fir->next;
-            }
-            else{
-                temp->next = sec;
-                sec=sec->next;
-            }
-            temp=temp->next;
+        if(list1==NULL) return list2;
+        if(list2==NULL) return list1;
+        if(list1->val <= list2->val){
+            list1->next = mergeTwoLists(list1->next,list2);
+            return list1;
         }
-        if(fir) temp->next=fir;
-        if(sec) temp->next=sec;
-        return head->next;
+        else{
+            list2->next = mergeTwoLists(list1,list2->next);
+            return list2;
+        }
+        
     }
 };
