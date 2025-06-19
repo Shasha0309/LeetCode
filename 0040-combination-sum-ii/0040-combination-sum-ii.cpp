@@ -1,7 +1,8 @@
 class Solution {
-    void solve(int ind,vector<vector<int>> &ans,vector<int> &out,int target,vector<int>&nums){
-         if(target==0){
-            ans.push_back(out);
+    void solve(vector<vector<int>>& ans,int ind,vector<int>& out,vector<int>& nums,int target){
+        
+            if(target==0) {
+                ans.push_back(out);
             return;
             }
         
@@ -9,8 +10,8 @@ class Solution {
             if(i>ind && nums[i]==nums[i-1]) continue;
             if(nums[i]>target) break;
             out.push_back(nums[i]);
-        solve(i+1,ans,out,target-nums[i],nums);
-        out.pop_back();
+            solve(ans,i+1,out,nums,target-nums[i]);
+            out.pop_back();   
         }
     }
 public:
@@ -18,7 +19,7 @@ public:
         sort(candidates.begin(),candidates.end());
         vector<vector<int>> ans;
         vector<int> out;
-        solve(0,ans,out,target,candidates);
+        solve(ans,0,out,candidates,target);
         return ans;
     }
 };
