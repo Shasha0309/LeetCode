@@ -7,12 +7,10 @@ public:
         maxl[0] = height[0];
         maxr[height.size()-1] = height[height.size()-1];
         for(int i=1;i<n;i++){
-            if(height[i]>maxl[i-1]) maxl[i]=height[i];
-            else maxl[i]=maxl[i-1];
+            maxl[i] = max(maxl[i-1],height[i]);
         }
         for(int i=height.size()-2;i>=0;i--){
-            if(height[i]>maxr[i+1]) maxr[i]=height[i];
-            else maxr[i]=maxr[i+1];
+            maxr[i] = max(maxr[i+1],height[i]);
         }
         int ans = 0;
         for(int i=0;i<n;i++){
