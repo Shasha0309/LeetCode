@@ -1,21 +1,33 @@
 class Solution {
-    bool sol(vector<int>& nums,int idx,vector<int>& dp){
-        if(idx==nums.size()-1) return true;
-        if(nums[idx]==0) return false;
-        if(dp[idx]!=-1) return dp[idx];
-        int reach = idx + nums[idx];
-        for(int i=idx+1;i<=reach;i++){
-            if(i<nums.size() && sol(nums,i,dp)) return dp[idx]=true;
-        } 
-        return dp[idx] = false;
-    }
+    
 public:
     bool canJump(vector<int>& nums) {
-        /*int n = nums.size();
-        vector<int> dp(n,0);
-        dp[n-1] = 1;
-        for(int i=n-2;i>=0;i--)*/
-        vector<int> dp(nums.size(),-1);
-        return sol(nums,0,dp);
+        int n = nums.size();
+        vector<int> dp(n, -1);
+        dp[n-1] = 1; //base case;
+        
+        for(int idx = n-2; idx >= 0; idx--) {
+            if(nums[idx] == 0) {
+                dp[idx] = false;
+                continue;   
+            }
+            
+            int flag = 0;
+            int reach = idx + nums[idx];
+            for(int jump=idx + 1; jump <= reach; jump++) {
+                if(jump < nums.size() && dp[jump]) {
+                    dp[idx] = true;
+                    flag = 1;  
+                    break;
+                }
+            }
+            if(flag == 1) 
+                continue;
+           
+            dp[idx] = false;
+			
+        }
+        return dp[0]; 
     }
+    
 };
