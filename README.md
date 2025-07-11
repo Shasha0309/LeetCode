@@ -284,6 +284,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1646-kth-missing-positive-number](https://github.com/Shasha0309/LeetCode/tree/master/1646-kth-missing-positive-number) |
 | [1677-matrix-diagonal-sum](https://github.com/Shasha0309/LeetCode/tree/master/1677-matrix-diagonal-sum) |
 | [1791-richest-customer-wealth](https://github.com/Shasha0309/LeetCode/tree/master/1791-richest-customer-wealth) |
+| [1829-maximum-units-on-a-truck](https://github.com/Shasha0309/LeetCode/tree/master/1829-maximum-units-on-a-truck) |
 | [1878-check-if-array-is-sorted-and-rotated](https://github.com/Shasha0309/LeetCode/tree/master/1878-check-if-array-is-sorted-and-rotated) |
 | [1950-sign-of-the-product-of-an-array](https://github.com/Shasha0309/LeetCode/tree/master/1950-sign-of-the-product-of-an-array) |
 | [2227-sum-of-subarray-ranges](https://github.com/Shasha0309/LeetCode/tree/master/2227-sum-of-subarray-ranges) |
@@ -529,6 +530,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/Shasha0309/LeetCode/tree/master/0714-best-time-to-buy-and-sell-stock-with-transaction-fee) |
 | [0890-lemonade-change](https://github.com/Shasha0309/LeetCode/tree/master/0890-lemonade-change) |
 | [1018-largest-perimeter-triangle](https://github.com/Shasha0309/LeetCode/tree/master/1018-largest-perimeter-triangle) |
+| [1829-maximum-units-on-a-truck](https://github.com/Shasha0309/LeetCode/tree/master/1829-maximum-units-on-a-truck) |
 ## Sorting
 |  |
 | ------- |
@@ -556,6 +558,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1129-longest-string-chain](https://github.com/Shasha0309/LeetCode/tree/master/1129-longest-string-chain) |
 | [1584-average-salary-excluding-the-minimum-and-maximum-salary](https://github.com/Shasha0309/LeetCode/tree/master/1584-average-salary-excluding-the-minimum-and-maximum-salary) |
 | [1626-can-make-arithmetic-progression-from-sequence](https://github.com/Shasha0309/LeetCode/tree/master/1626-can-make-arithmetic-progression-from-sequence) |
+| [1829-maximum-units-on-a-truck](https://github.com/Shasha0309/LeetCode/tree/master/1829-maximum-units-on-a-truck) |
 ## Dynamic Programming
 |  |
 | ------- |
