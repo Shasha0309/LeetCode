@@ -1,31 +1,28 @@
 class Solution {
-    void sol(vector<int> nums,vector<int> list,vector<bool> used,vector<vector<int>>& ans){
-        if(list.size()==nums.size()){
-            ans.push_back(list);
+    void backtrack(unordered_map<int, int>& counter, vector<int>& comb, int N,
+                   vector<vector<int>>& results) {
+        if (comb.size() == N) {
+            results.push_back(comb);
             return;
         }
-        for(int i=0;i<nums.size();i++){
-            if(used[i]) continue;
-            if(i>0 && nums[i]==nums[i-1] && !used[i-1]) continue;
-
-             used[i]=1;
-            list.push_back(nums[i]);
-           
-            
-            sol(nums,list,used,ans);
-
-            used[i]=0;
-            list.pop_back();
-
+        for (auto& item : counter) {
+            int num = item.first;
+            int count = item.second;
+            if (count == 0) continue;
+            comb.push_back(num);
+            counter[num]--;
+            backtrack(counter, comb, N, results);
+            comb.pop_back();
+            counter[num]++;
         }
     }
 public:
     vector<vector<int>> permuteUnique(vector<int>& nums) {
-        sort(nums.begin(),nums.end());
-        vector<vector<int>> ans;
-        vector<int> list; 
-        vector<bool> used(nums.size(),0);
-        sol(nums,list,used,ans);
-        return ans;
+        vector<vector<int>> results;
+        unordered_map<int, int> counter;
+        for (int num : nums) counter[num]++;
+        vector<int> comb;
+        backtrack(counter, comb, nums.size(), results);
+        return results;
     }
 };
