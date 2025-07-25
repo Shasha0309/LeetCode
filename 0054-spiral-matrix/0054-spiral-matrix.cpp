@@ -4,34 +4,34 @@ public:
         vector<int> ans;
         int n = matrix.size();
         int m = matrix[0].size();
-        int total = n*m;
-        int cnt = 0;
         int srow = 0;
         int erow = n-1;
         int scol = 0;
-        int ecol = m-1; 
-        while(cnt<total){
-            for(int i=scol;i<=ecol && cnt<total;i++){
+        int ecol = m-1;
+        int tot = n*m;
+        int nis=0;
+        while(nis<tot){
+            for(int i=scol;i<=ecol && nis<tot;i++){
                 ans.push_back(matrix[srow][i]);
-                cnt++;
+                nis++;
             }
-            srow++;
-            for(int i=srow;i<=erow && cnt<total;i++){
+             srow++;
+              for(int i=srow;i<=erow && nis<tot;i++){
                 ans.push_back(matrix[i][ecol]);
-                cnt++;
+                nis++;
             }
-            ecol--;
-            for(int i=ecol;i>=scol && cnt<total;i--){
+             ecol--;
+              for(int i=ecol;i>=scol && nis<tot;i--){
                 ans.push_back(matrix[erow][i]);
-                cnt++;
+                nis++;
             }
-            erow--;
-            for(int i=erow;i>=srow && cnt<total;i--){
+             erow--;
+              for(int i=erow;i>=srow && nis<tot;i--){
                 ans.push_back(matrix[i][scol]);
-                cnt++;
+                nis++;
             }
-            scol++;
+             scol++;
         }
-        return ans;
+        return ans;  
     }
 };
