@@ -9,8 +9,7 @@
  * };
  */
 class Solution {
-public:
-    ListNode* findLastNode(ListNode* head,int k){
+    ListNode* sol(ListNode* head,int k){
         int cnt = 1;
         while(head!=NULL){
             if(cnt==k) return head;
@@ -19,23 +18,23 @@ public:
         }
         return head;
     }
+public:
     ListNode* rotateRight(ListNode* head, int k) {
         if(head==NULL || k==0) return head;
-        
+        int n = 1;
         ListNode* temp = head;
-        int len = 1;
         while(temp->next!=NULL){
-            len++;
             temp=temp->next;
+            n++;
         }
-        int res = k%len;
-        if(res==0) return head;
-        k = k%len;
+        k=k%n;
+        if(k==0) return head;
         temp->next = head;
-        ListNode* lastNode = findLastNode(head,len-k);
+       
+        ListNode* lis = sol(head,n-k);
+        head = lis->next;
+        lis->next= NULL;
         
-        head=lastNode->next;
-        lastNode->next = NULL;
         return head;
     }
 };
