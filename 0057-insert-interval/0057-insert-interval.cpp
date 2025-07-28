@@ -7,7 +7,6 @@ public:
             ans.push_back(intervals[i]);
             i++;
         }
-        
         while(i<intervals.size() && intervals[i][0]<=newInterval[1]){
             newInterval[0] = min(intervals[i][0],newInterval[0]);
             newInterval[1] = max(intervals[i][1],newInterval[1]);
@@ -18,6 +17,5 @@ public:
             ans.push_back(intervals[j]);
         }
         return ans;
-
     }
 };
