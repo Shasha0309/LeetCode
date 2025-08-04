@@ -208,6 +208,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0064-minimum-path-sum](https://github.com/Shasha0309/LeetCode/tree/master/0064-minimum-path-sum) |
 | [0066-plus-one](https://github.com/Shasha0309/LeetCode/tree/master/0066-plus-one) |
 | [0073-set-matrix-zeroes](https://github.com/Shasha0309/LeetCode/tree/master/0073-set-matrix-zeroes) |
+| [0074-search-a-2d-matrix](https://github.com/Shasha0309/LeetCode/tree/master/0074-search-a-2d-matrix) |
 | [0075-sort-colors](https://github.com/Shasha0309/LeetCode/tree/master/0075-sort-colors) |
 | [0078-subsets](https://github.com/Shasha0309/LeetCode/tree/master/0078-subsets) |
 | [0081-search-in-rotated-sorted-array-ii](https://github.com/Shasha0309/LeetCode/tree/master/0081-search-in-rotated-sorted-array-ii) |
@@ -432,6 +433,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/Shasha0309/LeetCode/tree/master/0034-find-first-and-last-position-of-element-in-sorted-array) |
 | [0035-search-insert-position](https://github.com/Shasha0309/LeetCode/tree/master/0035-search-insert-position) |
 | [0069-sqrtx](https://github.com/Shasha0309/LeetCode/tree/master/0069-sqrtx) |
+| [0074-search-a-2d-matrix](https://github.com/Shasha0309/LeetCode/tree/master/0074-search-a-2d-matrix) |
 | [0081-search-in-rotated-sorted-array-ii](https://github.com/Shasha0309/LeetCode/tree/master/0081-search-in-rotated-sorted-array-ii) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/Shasha0309/LeetCode/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0162-find-peak-element](https://github.com/Shasha0309/LeetCode/tree/master/0162-find-peak-element) |
@@ -829,6 +831,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0063-unique-paths-ii](https://github.com/Shasha0309/LeetCode/tree/master/0063-unique-paths-ii) |
 | [0064-minimum-path-sum](https://github.com/Shasha0309/LeetCode/tree/master/0064-minimum-path-sum) |
 | [0073-set-matrix-zeroes](https://github.com/Shasha0309/LeetCode/tree/master/0073-set-matrix-zeroes) |
+| [0074-search-a-2d-matrix](https://github.com/Shasha0309/LeetCode/tree/master/0074-search-a-2d-matrix) |
 | [0130-surrounded-regions](https://github.com/Shasha0309/LeetCode/tree/master/0130-surrounded-regions) |
 | [0542-01-matrix](https://github.com/Shasha0309/LeetCode/tree/master/0542-01-matrix) |
 | [0733-flood-fill](https://github.com/Shasha0309/LeetCode/tree/master/0733-flood-fill) |
