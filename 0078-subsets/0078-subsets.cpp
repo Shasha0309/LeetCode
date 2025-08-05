@@ -1,15 +1,17 @@
 class Solution {
 public:
     vector<vector<int>> subsets(vector<int>& nums) {
-        vector<vector<int>> result = {{}};
-        for(int num:nums){
-            int size = result.size();
-            for(int i=0;i<size;i++){
-                vector<int> path = result[i];
-                path.push_back(num);
-                result.push_back(path);
+        vector<vector<int>> ans;
+        int n = nums.size();
+        for(int i=0;i< (1 << n);i++){
+            vector<int> path;
+            for(int j=0;j<n;j++){
+                if((i&(1<<j))>0){
+                    path.push_back(nums[j]);
+                }
             }
+            ans.push_back(path);
         }
-        return result;
+        return ans;
     }
 };
