@@ -1,5 +1,5 @@
 class Solution {
-    void sol(int n,int ind,int ks,vector<vector<int>>& ans,vector<int> path){
+    void sol(int n,int ind,int ks,vector<vector<int>>& ans,vector<int>& path){
         
         if(path.size()==ks){
             ans.push_back(path);
