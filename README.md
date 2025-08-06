@@ -211,6 +211,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0074-search-a-2d-matrix](https://github.com/Shasha0309/LeetCode/tree/master/0074-search-a-2d-matrix) |
 | [0075-sort-colors](https://github.com/Shasha0309/LeetCode/tree/master/0075-sort-colors) |
 | [0078-subsets](https://github.com/Shasha0309/LeetCode/tree/master/0078-subsets) |
+| [0079-word-search](https://github.com/Shasha0309/LeetCode/tree/master/0079-word-search) |
 | [0081-search-in-rotated-sorted-array-ii](https://github.com/Shasha0309/LeetCode/tree/master/0081-search-in-rotated-sorted-array-ii) |
 | [0084-largest-rectangle-in-histogram](https://github.com/Shasha0309/LeetCode/tree/master/0084-largest-rectangle-in-histogram) |
 | [0088-merge-sorted-array](https://github.com/Shasha0309/LeetCode/tree/master/0088-merge-sorted-array) |
@@ -391,6 +392,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0071-simplify-path](https://github.com/Shasha0309/LeetCode/tree/master/0071-simplify-path) |
 | [0072-edit-distance](https://github.com/Shasha0309/LeetCode/tree/master/0072-edit-distance) |
 | [0076-minimum-window-substring](https://github.com/Shasha0309/LeetCode/tree/master/0076-minimum-window-substring) |
+| [0079-word-search](https://github.com/Shasha0309/LeetCode/tree/master/0079-word-search) |
 | [0115-distinct-subsequences](https://github.com/Shasha0309/LeetCode/tree/master/0115-distinct-subsequences) |
 | [0125-valid-palindrome](https://github.com/Shasha0309/LeetCode/tree/master/0125-valid-palindrome) |
 | [0127-word-ladder](https://github.com/Shasha0309/LeetCode/tree/master/0127-word-ladder) |
@@ -654,6 +656,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Depth-First Search
 |  |
 | ------- |
+| [0079-word-search](https://github.com/Shasha0309/LeetCode/tree/master/0079-word-search) |
 | [0094-binary-tree-inorder-traversal](https://github.com/Shasha0309/LeetCode/tree/master/0094-binary-tree-inorder-traversal) |
 | [0098-validate-binary-search-tree](https://github.com/Shasha0309/LeetCode/tree/master/0098-validate-binary-search-tree) |
 | [0099-recover-binary-search-tree](https://github.com/Shasha0309/LeetCode/tree/master/0099-recover-binary-search-tree) |
@@ -785,6 +788,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0047-permutations-ii](https://github.com/Shasha0309/LeetCode/tree/master/0047-permutations-ii) |
 | [0077-combinations](https://github.com/Shasha0309/LeetCode/tree/master/0077-combinations) |
 | [0078-subsets](https://github.com/Shasha0309/LeetCode/tree/master/0078-subsets) |
+| [0079-word-search](https://github.com/Shasha0309/LeetCode/tree/master/0079-word-search) |
 | [0090-subsets-ii](https://github.com/Shasha0309/LeetCode/tree/master/0090-subsets-ii) |
 | [0494-target-sum](https://github.com/Shasha0309/LeetCode/tree/master/0494-target-sum) |
 ## Bit Manipulation
@@ -833,6 +837,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0064-minimum-path-sum](https://github.com/Shasha0309/LeetCode/tree/master/0064-minimum-path-sum) |
 | [0073-set-matrix-zeroes](https://github.com/Shasha0309/LeetCode/tree/master/0073-set-matrix-zeroes) |
 | [0074-search-a-2d-matrix](https://github.com/Shasha0309/LeetCode/tree/master/0074-search-a-2d-matrix) |
+| [0079-word-search](https://github.com/Shasha0309/LeetCode/tree/master/0079-word-search) |
 | [0130-surrounded-regions](https://github.com/Shasha0309/LeetCode/tree/master/0130-surrounded-regions) |
 | [0542-01-matrix](https://github.com/Shasha0309/LeetCode/tree/master/0542-01-matrix) |
 | [0733-flood-fill](https://github.com/Shasha0309/LeetCode/tree/master/0733-flood-fill) |
