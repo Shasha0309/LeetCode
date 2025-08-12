@@ -415,6 +415,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1437-minimum-insertion-steps-to-make-a-string-palindrome](https://github.com/Shasha0309/LeetCode/tree/master/1437-minimum-insertion-steps-to-make-a-string-palindrome) |
 | [1460-number-of-substrings-containing-all-three-characters](https://github.com/Shasha0309/LeetCode/tree/master/1460-number-of-substrings-containing-all-three-characters) |
 | [1894-merge-strings-alternately](https://github.com/Shasha0309/LeetCode/tree/master/1894-merge-strings-alternately) |
+| [3453-generate-binary-strings-without-adjacent-zeros](https://github.com/Shasha0309/LeetCode/tree/master/3453-generate-binary-strings-without-adjacent-zeros) |
 ## Sliding Window
 |  |
 | ------- |
@@ -795,6 +796,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0079-word-search](https://github.com/Shasha0309/LeetCode/tree/master/0079-word-search) |
 | [0090-subsets-ii](https://github.com/Shasha0309/LeetCode/tree/master/0090-subsets-ii) |
 | [0494-target-sum](https://github.com/Shasha0309/LeetCode/tree/master/0494-target-sum) |
+| [3453-generate-binary-strings-without-adjacent-zeros](https://github.com/Shasha0309/LeetCode/tree/master/3453-generate-binary-strings-without-adjacent-zeros) |
 ## Bit Manipulation
 |  |
 | ------- |
@@ -808,6 +810,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0268-missing-number](https://github.com/Shasha0309/LeetCode/tree/master/0268-missing-number) |
 | [0389-find-the-difference](https://github.com/Shasha0309/LeetCode/tree/master/0389-find-the-difference) |
 | [2323-minimum-bit-flips-to-convert-number](https://github.com/Shasha0309/LeetCode/tree/master/2323-minimum-bit-flips-to-convert-number) |
+| [3453-generate-binary-strings-without-adjacent-zeros](https://github.com/Shasha0309/LeetCode/tree/master/3453-generate-binary-strings-without-adjacent-zeros) |
 ## Recursion
 |  |
 | ------- |
