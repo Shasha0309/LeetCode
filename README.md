@@ -488,6 +488,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1370-count-number-of-nice-subarrays](https://github.com/Shasha0309/LeetCode/tree/master/1370-count-number-of-nice-subarrays) |
 | [1630-count-odd-numbers-in-an-interval-range](https://github.com/Shasha0309/LeetCode/tree/master/1630-count-odd-numbers-in-an-interval-range) |
 | [1950-sign-of-the-product-of-an-array](https://github.com/Shasha0309/LeetCode/tree/master/1950-sign-of-the-product-of-an-array) |
+| [2050-count-good-numbers](https://github.com/Shasha0309/LeetCode/tree/master/2050-count-good-numbers) |
 ## Counting
 |  |
 | ------- |
@@ -820,6 +821,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0231-power-of-two](https://github.com/Shasha0309/LeetCode/tree/master/0231-power-of-two) |
 | [0234-palindrome-linked-list](https://github.com/Shasha0309/LeetCode/tree/master/0234-palindrome-linked-list) |
 | [1013-fibonacci-number](https://github.com/Shasha0309/LeetCode/tree/master/1013-fibonacci-number) |
+| [2050-count-good-numbers](https://github.com/Shasha0309/LeetCode/tree/master/2050-count-good-numbers) |
 ## Memoization
 |  |
 | ------- |
