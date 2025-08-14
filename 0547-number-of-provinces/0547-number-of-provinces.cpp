@@ -1,9 +1,10 @@
 class Solution {
-    void solve(int node,vector<int> dp[],vector<int>& vis){
+    void sol(int node,vector<int> adj[],vector<int>& vis){
         vis[node]=1;
-        for(auto it:dp[node])
-        if(!vis[it]){
-            solve(it,dp,vis);
+        for(auto it:adj[node]){
+            if(!vis[it]){
+                sol(it,adj,vis);
+            }
         }
     }
 public:
@@ -19,17 +20,14 @@ public:
                 }
             }
         }
-
         vector<int> vis(V,0);
         int cnt=0;
         for(int i=0;i<V;i++){
-            
             if(!vis[i]){
                 cnt++;
-                solve(i,adj,vis);
+                sol(i,adj,vis);
             }
-        }
-        return cnt;
-         
+        } 
+       return cnt;
     }
 };
