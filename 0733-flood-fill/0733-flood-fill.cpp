@@ -1,24 +1,26 @@
 class Solution {
-    void solve(int incolor,vector<vector<int>>& adj,int drow[],int dcol[],int sr,int sc,int color,vector<vector<int>>& img){
-        int n = img.size();
-        int m = img[0].size();
-        adj[sr][sc]=color;
+    void sol(int precol,vector<vector<int>>& ans,int sr,int sc,int drow[], int dcol[],int color,vector<vector<int>> image){
+        int n = image.size();
+        int m = image[0].size();
+        ans[sr][sc]=color;
         for(int i=0;i<4;i++){
-             int row = sr+drow[i];
-             int col = sc+dcol[i];
-             if(row>=0 && row<n && col>=0 && col<m && img[row][col]==incolor && adj[row][col]!=color){
-                solve(incolor,adj,drow,dcol,row,col,color,img);
-             }
+            int r = sr+drow[i];
+            int c = sc+dcol[i];
+            if(r>=0 && r<n && c>=0 && c<m && image[r][c]==precol && ans[r][c]!=color){
+               // ans[r][c] = color;
+                sol(precol,ans,r,c,drow,dcol,color,image);
+            }
         }
-
     }
 public:
     vector<vector<int>> floodFill(vector<vector<int>>& image, int sr, int sc, int color) {
-        int incolor = image[sr][sc];
-        vector<vector<int>> adj = image;
-        int drow[] = {1,0,-1,0};
-        int dcol[] = {0,1,0,-1};
-        solve(incolor,adj,drow,dcol,sr,sc,color,image);
-        return adj;
+       // int n = image.size();
+       // int m = image[0].size();
+        vector<vector<int>> ans = image;
+       int drow[4] = {0,1,0,-1};
+       int dcol[4] = {1,0,-1,0};
+       int prevcol = image[sr][sc];
+       sol(prevcol,ans,sr,sc,drow,dcol,color,image);
+       return ans;
     }
 };
