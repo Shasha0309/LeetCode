@@ -3,37 +3,40 @@ public:
     vector<vector<int>> updateMatrix(vector<vector<int>>& mat) {
         int n = mat.size();
         int m = mat[0].size();
-        vector<vector<int>> ans(n,vector<int>(m,0));
-        queue<pair<pair<int,int>, int>> q;
+        vector<vector<int>> adj(n,vector<int>(m,0));
+        queue<pair<pair<int,int>,int>> q;
+       // int total = 0;
         vector<vector<int>> vis(n,vector<int>(m,0));
         for(int i=0;i<n;i++){
             for(int j=0;j<m;j++){
                 if(mat[i][j]==0){
-                    q.push({{i,j}, 0});
-                    vis[i][j] = 1;
+                   vis[i][j]=1;
+                   q.push({{i,j},0});
                 }
-                else{
-                    vis[i][j] = 0;
-                }
+               /* else{
+                    total++;
+                }*/
             }
         }
-        int drow[] = {-1,0,1,0};
-        int dcol[] = {0,1,0,-1};
+        int drow[4]={0,1,0,-1};
+        int dcol[4]={1,0,-1,0};
+        //int t=1;
         while(!q.empty()){
-            int r = q.front().first.first;
-            int c = q.front().first.second;
-            int t = q.front().second;
+            int i = q.front().first.first;
+            int j = q.front().first.second;
+            int tis = q.front().second;
             q.pop();
-            ans[r][c] = t;
-            for(int i=0;i<4;i++){
-                int newr = r+drow[i];
-                int newc = c+dcol[i];
-                if(newr>=0 && newr<n && newc>=0 && newc<m && vis[newr][newc]==0){
-                    vis[newr][newc] = 1;
-                    q.push({{newr,newc},t+1});
+            adj[i][j]=tis;
+            for(int s=0;s<4;s++){
+                int r = i+drow[s];
+                int c = j+dcol[s];
+                if(r>=0 && r<n && c>=0 && c<m && vis[r][c]==0 && mat[r][c]==1){
+                    vis[r][c]=1;
+                    q.push({{r,c},tis+1});
+                    
                 }
             }
         }
-        return ans;
+        return adj;
     }
 };
