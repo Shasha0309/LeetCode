@@ -1,16 +1,16 @@
 class Solution {
-    /*void dfs(int i,int j,vector<vector<int>>& vis,vector<vector<char>> board,int drow[],int dcol[],int n,int m){
+    void dfs(int i,int j,vector<vector<int>>& vis,vector<vector<char>>& board,int drow[],int dcol[],int n,int m){
         vis[i][j]=1;
         for(int s=0;s<4;s++){
             int r = i+drow[s];
             int c = j+dcol[s];
-            if(r>=0 && r<n && c>=0 && c<m && !vis[i][j] && board[r][c]=='O'){
+            if(r>=0 && r<n && c>=0 && c<m && !vis[r][c] && board[r][c]=='O'){
                 dfs(r,c,vis,board,drow,dcol,n,m);
             }
         }
-    }*/
+    }
 
-    void dfs(int row,int col,vector<vector<int>>& vis,vector<vector<char>>& mat,int dr[],int dc[],int n,int m){
+    /*void dfs(int row,int col,vector<vector<int>>& vis,vector<vector<char>>& mat,int dr[],int dc[],int n,int m){
         vis[row][col] = 1;
         for(int i=0;i<4;i++){
             int r = row+dr[i];
@@ -19,7 +19,7 @@ class Solution {
                 dfs(r,c,vis,mat,dr,dc,n,m);
             }
         }
-    }
+    }*/
 public:
     void solve(vector<vector<char>>& board) {
        /* int drow[4] = {1,0,-1,0};
