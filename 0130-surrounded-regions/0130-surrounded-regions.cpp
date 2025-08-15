@@ -1,38 +1,42 @@
 class Solution {
-    void dfs(int i,int j,vector<vector<int>>& vis,vector<vector<char>>& board,int drow[],int dcol[],int n,int m){
-        vis[i][j]=1;
-        for(int s=0;s<4;s++){
-            int r = i+drow[s];
-            int c = j+dcol[s];
-            if(r>=0 && r<n && c>=0 && c<m && !vis[r][c] && board[r][c]=='O'){
-                dfs(r,c,vis,board,drow,dcol,n,m);
-            }
-        }
-    }
 public:
     void solve(vector<vector<char>>& board) {
-        int drow[4] = {1,0,-1,0};
-        int dcol[4] = {0,1,0,-1};
         int n = board.size();
         int m = board[0].size();
         vector<vector<int>> vis(n,vector<int>(m,0));
+        queue<pair<int,int>> q;
         for(int i=0;i<m;i++){
             if(!vis[0][i] && board[0][i]=='O'){
-                dfs(0,i,vis,board,drow,dcol,n,m);
+                q.push({0,i});
             }
             if(!vis[n-1][i] && board[n-1][i]=='O'){
-                dfs(n-1,i,vis,board,drow,dcol,n,m);
+                q.push({n-1,i});
             }
         }
         for(int i=0;i<n;i++){
             if(!vis[i][0] && board[i][0]=='O'){
-                dfs(i,0,vis,board,drow,dcol,n,m);
+                q.push({i,0});
             }
             if(!vis[i][m-1] && board[i][m-1]=='O'){
-                dfs(i,m-1,vis,board,drow,dcol,n,m);
+                q.push({i,m-1});
             }
         }
-
+        int drow[4] = {0,1,0,-1};
+        int dcol[4] = {1,0,-1,0};
+        while(!q.empty()){
+            int r = q.front().first;
+            int c = q.front().second;
+            q.pop();
+            vis[r][c]=1;
+            for(int i=0;i<4;i++){
+                int rr = r+drow[i];
+                int cc = c+dcol[i];
+                if(rr>=0 && rr<n && cc>=0 && cc<m && !vis[rr][cc] && board[rr][cc]=='O'){
+                    vis[rr][cc]=1;
+                    q.push({rr,cc});
+                }
+            }
+        }
         for(int i=0;i<n;i++){
             for(int j=0;j<m;j++){
                 if(!vis[i][j] && board[i][j]=='O'){
@@ -40,8 +44,5 @@ public:
                 }
             }
         }
-
-
-       
     }
 };
