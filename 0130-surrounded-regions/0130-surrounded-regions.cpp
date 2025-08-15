@@ -26,10 +26,10 @@ public:
         }
         for(int i=0;i<n;i++){
             if(!vis[i][0] && board[i][0]=='O'){
-                dfs(0,i,vis,board,drow,dcol,n,m);
+                dfs(i,0,vis,board,drow,dcol,n,m);
             }
             if(!vis[i][m-1] && board[i][m-1]=='O'){
-                dfs(m-1,i,vis,board,drow,dcol,n,m);
+                dfs(i,m-1,vis,board,drow,dcol,n,m);
             }
         }
 
