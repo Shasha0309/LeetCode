@@ -1,5 +1,5 @@
 class Solution {
-    bool dfs(int i,int col,int color[],vector<vector<int>> graph){
+    bool dfs(int i,int col,int color[],vector<vector<int>>& graph){
         color[i]=col;
         for(auto it:graph[i]){
             if(color[it]==-1){
