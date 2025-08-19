@@ -1,35 +1,32 @@
 class Solution {
 public:
     vector<int> findOrder(int numCourses, vector<vector<int>>& prerequisites) {
-        vector<int> adj[numCourses];
-        for(auto& it : prerequisites){
+        int n = numCourses;
+        vector<vector<int>> adj(n);
+        for(auto it:prerequisites){
             adj[it[1]].push_back(it[0]);
         }
-         queue<int> q;
-	    vector<int> indeg(numCourses,0);
-	    for(int i=0;i<numCourses;i++){
-	        for(auto it : adj[i]){
-	            indeg[it]++;
-	        }
-	    }
-	    for(int i=0;i<numCourses;i++){
-	        if(indeg[i]==0){
-	            q.push(i);
-	        }
-	    }
-	    vector<int> ans;
-	    while(!q.empty()){
-	        int node = q.front();
-	        q.pop();
-	        ans.push_back(node);
-	        for(auto it : adj[node]){
-	            indeg[it]--;
-	            if(indeg[it]==0){
-	                q.push(it);
-	            }
-	        }
-	    }
-	    if(ans.size()==numCourses) return ans;
+        vector<int> indeg(n,0);
+        for(int i=0;i<n;i++){
+            for(auto it:adj[i]){
+            indeg[it]++;
+            }
+        }
+        vector<int> ans;
+        queue<int> q;
+        for(int i=0;i<n;i++){
+            if(indeg[i]==0) q.push(i);
+        }
+        while(!q.empty()){
+            int node = q.front();
+            q.pop();
+            ans.push_back(node);
+            for(auto it:adj[node]){
+                indeg[it]--;
+                if(indeg[it]==0) q.push(it);
+            }
+        }
+        if(ans.size()==n) return ans;
         return {};
     }
 };
